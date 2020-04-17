@@ -1,0 +1,14 @@
+/* -----------------------------------------------------------
+---------------------------- INICIO MEDIA QUERYS------------
+-----------------------------------------------------------*/
+/* --------------------------- DISPOSITIVOS PORTRAIT-------- */
+@media only screen and (min-width: 320px) {}
+
+/* --------------------------- DISPOSITIVOS LANDSCAPE-------- */
+@media only screen and (min-width: 480px) {}
+
+/* --------------------------- DISPOSITIVOS LANDSCAPE Y iPAD-------- */
+@media only screen and (min-width: 768px) {}
+
+/* --------------------------- DESKTOP, iPAD PRO, TV-------- */
+@media only screen and (min-width: 1024px) {}
