@@ -1,0 +1,19 @@
+{
+  "name": "miustaapp",
+  "version": "1.0.0",
+  "description": "App hecha por estudiantes para estudiantes. ENJOY-.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielVM19/miustaapp.git"
+  },
+  "author": "Daniel Valderrama - Juan David Rey - Julian Esteban Espinosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielVM19/miustaapp/issues"
+  },
+  "homepage": "https://github.com/DanielVM19/miustaapp#readme"
+}
