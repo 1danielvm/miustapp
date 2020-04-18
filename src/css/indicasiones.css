@@ -1,0 +1,24 @@
+/* ---------------------- INDICACIONES--------------- */
+.indicaciones_text {
+    margin-top: var(--space3);
+}
+
+.indicaciones_text ul {
+    list-style: none;
+    padding-left: var(--space);
+}
+
+.indicaciones_text ul li::before {
+    content: "\2022";
+    font-weight: 900;
+    color: var(--yellow-color);
+    display: inline-block;
+    width: var(--space2);
+}
+
+.indicaciones_text li {
+    margin-bottom: var(--space);
+    font-weight: 300;
+    color: var(--gray2-dark-color);
+    line-height: 23px;
+}

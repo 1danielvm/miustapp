@@ -1,0 +1,15 @@
+/* ---------------------- START --------------- */
+.start {
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.logo_loader {
+    width: 146px;
+    background-image: url(../img/logo_contipo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

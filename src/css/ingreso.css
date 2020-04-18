@@ -1,0 +1,41 @@
+/* ---------------------- INGRESO --------------- */
+.ingreso {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: [start] 1fr [linea2] 146px [linea3] 1fr[end];
+    grid-template-rows: [start] 1fr[linea2] 1fr [end];
+}
+
+.logo_ingreso {
+    grid-column: linea2/linea3;
+    grid-row: start / linea2;
+    width: 100%;
+    background-image: url(../img/logo_contipo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.accion_ingreso {
+    grid-column: start/end;
+    grid-row: linea2/ end;
+    margin-top: 44px;
+}
+
+.accion_ingreso .boton {
+    margin: var(--space2);
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    height: 44px;
+    text-decoration: none;
+    border-radius: var(--space);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 2px var(--yellow-color);
+}
+
+.accion_ingreso .invitado {
+    background: var(--gray-color);
+    border-bottom: none;
+}

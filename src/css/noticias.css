@@ -1,0 +1,110 @@
+/* ---------------------- NOTICIAS--------------- */
+.seccion_noticias {
+    margin: 0px 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.seccion_noticias h3 {
+    font-size: var(--titulo);
+    color: var(--gray2-dark-color);
+}
+
+.tendencias {
+    overflow-x: scroll;
+    margin-bottom: var(--space3);
+}
+
+.tendencias a {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.img_tendencia img {
+    height: 213px;
+}
+
+.card_tendencia {
+    background: var(--gray2-color);
+    border-radius: var(--space);
+    margin-right: var(--space);
+}
+
+.card_tendencia p {
+    color: var(--gray-color);
+    font-size: var(--normal);
+    margin: var(--space);
+    font-weight: 600;
+    line-height: 19px;
+}
+
+.card_recientes {
+    display: flex;
+    align-items: center;
+    background: var(--gray2-color);
+    border-radius: var(--space);
+}
+
+.img_recientes {
+    background-image: url(../img/noticia1_img1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: var(--space);
+    height: 113.1px;
+    width: 201.5px;
+}
+
+.img_recientes2 {
+    background-image: url(../img/recientes_img2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: var(--space);
+    height: 113.1px;
+    width: 201.5px;
+}
+
+.recientes {
+    margin-bottom: var(--space3);
+}
+
+.card_recientes {
+    margin-bottom: var(--space2);
+}
+
+.titular_recientes {
+    width: 126px;
+    margin: var(--space);
+}
+
+.titular_recientes h2 {
+    font-size: var(--normal);
+    color: var(--gray-color);
+}
+
+.titular_recientes p {
+    font-size: var(--pequeno);
+    color: var(--gray-color);
+    margin: 0;
+}
+
+.menu_navegar a {
+    text-decoration: none;
+}
+
+.menu_navegar .boton {
+    background: var(--gray2-color);
+    font-size: var(--subtitulo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray-color);
+    margin: 12px 0px;
+    height: 44px;
+    border-radius: var(--space);
+}
+
+.menu_navegar .boton p {
+    margin: 0;
+}

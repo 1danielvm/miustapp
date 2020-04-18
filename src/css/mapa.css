@@ -1,0 +1,45 @@
+/* ---------------------- MAPA--------------- */
+.seccion_mapa {
+    margin: 0px 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.mapa_fondo img {
+    width: 100%;
+    margin-top: var(--space2);
+}
+
+.accion_mapa {
+    margin-top: var(--space4);
+}
+
+.accion_mapa input {
+    background: var(--gray3-color);
+    height: 30px;
+    width: -webkit-fill-available;
+    margin: var(--space) var(--space2);
+    border: none;
+    border-radius: var(--space);
+    color: var(--gray-color);
+    text-align: center;
+    font-size: var(--normal);
+    font-weight: 400;
+}
+
+.accion_mapa .boton {
+    margin: var(--space2);
+    margin-top: 56px;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    height: 44px;
+    text-decoration: none;
+    border-radius: var(--space);
+    border-bottom: solid 2px var(--yellow-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: -webkit-fill-available;
+    font-family: var(--font1);
+    font-size: var(--normal);
+}
