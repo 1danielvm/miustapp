@@ -1,0 +1,69 @@
+/* ---------------------- NOTAS--------------- */
+.seccion_notas {
+    margin: 0px 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.datos_notas h2 {
+    font-size: var(--titulo);
+    color: var(--gray2-dark-color);
+    margin-top: var(--space);
+    padding-right: var(--space3);
+}
+
+.grafica img {
+    width: 100%;
+    margin-top: var(--space2);
+}
+
+.card_notas {
+    background: var(--gray2-color);
+    border-radius: var(--space);
+    padding: var(--space2);
+    margin-bottom: var(--space2);
+}
+
+.info_card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.info_card p {
+    font-size: var(--subtitulo);
+    color: var(--gray-dark--color);
+    margin: 0;
+}
+
+.header_card p {
+    color: var(--blue-color);
+    font-weight: bold;
+    position: absolute;
+    width: 82%;
+    text-align: end;
+}
+
+.info_card span {
+    font-size: var(--normal);
+    color: var(--gray-color);
+    margin-bottom: var(--space);
+}
+
+.card_notas a {
+    text-decoration: none;
+}
+
+.card_notas .boton {
+    margin-top: 24px;
+    width: 100%;
+    height: 42px;
+    background: var(--blue-color);
+    border-bottom: solid 2px var(--yellow-color);
+    color: var(--white-color);
+    font-size: var(--normal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--space);
+}

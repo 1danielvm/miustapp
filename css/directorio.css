@@ -1,0 +1,41 @@
+/* ---------------------- DIRECTORIO --------------- */
+.seccion_directorio {
+    margin: 0px 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.buscar_directorio input {
+    background: var(--gray2-color);
+    height: 30px;
+    width: -webkit-fill-available;
+    margin: var(--space2);
+    border: none;
+    border-radius: var(--space);
+    color: var(--gray-color);
+    text-align: center;
+    font-size: var(--normal);
+    font-weight: 400;
+    margin-top: var(--space2);
+}
+
+.datos_directorio .text {
+    margin-bottom: var(--space3);
+    margin-top: 0;
+}
+
+.datos_directorio .text h2 {
+    font-size: var(--titulo);
+    color: var(--gray2-dark-color);
+}
+
+.datos_directorio .text h3 {
+    font-size: var(--subtitulo);
+    color: var(--gray-color);
+    margin-top: 0;
+}
+
+.datos_directorio .text p {
+    margin-left: var(--space2);
+    color: var(--gray2-dark-color);
+}

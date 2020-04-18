@@ -1,0 +1,47 @@
+/* ---------------------- VARIABLES -------------- */
+:root {
+    /* -------- tipografía------ */
+    --font1: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    --normal: 16px;
+    --seccion: 34px;
+    --titulo: 28px;
+    --subtitulo: 20px;
+    --medio: 14px;
+    --pequeno: 12px;
+    --accion: 17px;
+    --menu: 10px;
+    /* -------- colores------ */
+    --white-color: #FFFFFF;
+    --white2-color: #F9F9F9;
+    --gray-color: #969696;
+    --gray2-color: #EEEEEE;
+    --gray3-color: #CBCBCB;
+    --gray-dark--color: #4D4D4D;
+    --gray2-dark-color: #47494D;
+    --blue-color: #34507D;
+    --blue2-color: #3B8CC5;
+    --black-color: #000000;
+    --red-color: #FD3B2F;
+    --yellow-color: #FDBB26;
+    /* -------- espaciado------ */
+    --space: 8px;
+    --space2: 16px;
+    --space3: 32px;
+    --space4: 64px;
+}
+
+
+/* -----------------------------------------------------------
+---------------------------- INICIO MEDIA QUERYS------------
+-----------------------------------------------------------*/
+/* --------------------------- DISPOSITIVOS PORTRAIT-------- */
+@media only screen and (min-width: 320px) {}
+
+/* --------------------------- DISPOSITIVOS LANDSCAPE-------- */
+@media only screen and (min-width: 480px) {}
+
+/* --------------------------- DISPOSITIVOS LANDSCAPE Y iPAD-------- */
+@media only screen and (min-width: 768px) {}
+
+/* --------------------------- DESKTOP, iPAD PRO, TV-------- */
+@media only screen and (min-width: 1024px) {}
