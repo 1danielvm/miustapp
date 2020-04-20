@@ -33,3 +33,20 @@
 .horizontal-boton{
     display: flex;
 }
+
+.boton-cuatro{
+    text-align: center;
+    background-color: var(--blue-color);
+    border-radius: var(--space);
+    width: 167.48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+.boton-cuatro p{
+    color: var(--white-color);
+    font-size: var(--medio);
+    font-weight: 400;
+}
