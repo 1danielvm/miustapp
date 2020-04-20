@@ -1,66 +1,70 @@
 /* ---------------------- VARIABLES -------------- */
 :root {
-    /* -------- tipografía------ */
-    --font1: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
-    --normal: 16px;
-    --seccion: 34px;
-    --titulo: 28px;
-    --subtitulo: 20px;
-    --medio: 14px;
-    --pequeno: 12px;
-    --accion: 17px;
-    --menu: 10px;
-    /* -------- colores------ */
-    --white-color: #FFFFFF;
-    --white2-color: #F8F8F8;
-    --gray-color: #969696;
-    --gray2-color: #EEEEEE;
-    --gray3-color: #CBCBCB;
-    --gray-dark--color: #4D4D4D;
-    --gray2-dark-color: #47494D;
-    --blue-color: #34507D;
-    --blue2-color: #3B8CC5;
-    --blue3-color: #2A73A5;
-    --black-color: #000000;
-    --red-color: #FD3B2F;
-    --yellow-color: #FDBB26;
-    /* -------- espaciado------ */
-    --space: 8px;
-    --space2: 16px;
-    --space3: 32px;
-    --space4: 64px;
-    /* -------- botones------ */
-    --boton-uno: {
-        background-color: var(--blue-color);
-        color: var(--white-color);
-        height: 48px;
-        width: 184px;
-        text-decoration: none;
-        border-radius: var(--space);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: var(--space2);
-    };
+  /* -------- tipografía------ */
+  --font1: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+  --normal: 16px;
+  --seccion: 34px;
+  --titulo: 28px;
+  --subtitulo: 20px;
+  --medio: 14px;
+  --pequeno: 12px;
+  --accion: 17px;
+  --menu: 10px;
+  /* -------- colores------ */
+  --white-color: #FFFFFF;
+  --white2-color: #F8F8F8;
+  --gray-color: #969696;
+  --gray2-color: #EEEEEE;
+  --gray3-color: #CBCBCB;
+  --gray-dark--color: #4D4D4D;
+  --gray2-dark-color: #47494D;
+  --blue-color: #34507D;
+  --blue2-color: #3B8CC5;
+  --blue3-color: #2A73A5;
+  --black-color: #000000;
+  --red-color: #FD3B2F;
+  --yellow-color: #FDBB26;
+  /* -------- espaciado------ */
+  --space: 8px;
+  --space2: 16px;
+  --space3: 32px;
+  --space4: 64px;
 
-    --boton-dos: {
-        margin: var(--space2);
-        margin-top: 56px;
-        background-color: var(--blue-color);
-        color: var(--white-color);
-        height: 44px;
-        text-decoration: none;
-        border-radius: var(--space);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-bottom: solid 2px var(--yellow-color);
-        width: -webkit-fill-available;
-        font-family: var(--font1);
-        font-size: var(--normal);
-    };
+  /* -------- botones------ */
+  --boton-uno: {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    height: 48px;
+    width: 184px;
+    text-decoration: none;
+    border-radius: var(--space);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--space2);
+  }
+
+  ;
+
+  --boton-dos: {
+    margin: var(--space2);
+    margin-top: 56px;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    height: 44px;
+    text-decoration: none;
+    border-radius: var(--space);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 2px var(--yellow-color);
+    width: -webkit-fill-available;
+    font-family: var(--font1);
+    font-size: var(--normal);
+  }
+
+  ;
 }
-
 
 /* -----------------------------------------------------------
 ---------------------------- INICIO MEDIA QUERYS------------
@@ -69,8 +73,169 @@
 @media only screen and (min-width: 320px) {}
 
 /* --------------------------- DISPOSITIVOS LANDSCAPE-------- */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    
+@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
+  .card_onboarding {
+    display: grid;
+    grid-template-columns: [start]1fr[line2]1fr[end];
+    height: 100vh;
+  }
+
+  .card_onboarding article {
+    grid-column: start / line2;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card_onboarding img {
+    height: 100vh;
+  }
+
+  .info-onboarding {
+    grid-column: line2 / end;
+    grid-row: 1;
+    display: initial;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: -webkit-center;
+    align-self: center;
+    margin-bottom: var(--space3);
+    width: 80%;
+  }
+
+  .boton-cuatro {
+    text-align: center;
+    background-color: var(--blue-color);
+    border-radius: var(--space);
+    width: 167.48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+  }
+
+  /* ------Ingreso---------- */
+  .ingreso {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: [start] 1fr [linea2] 1fr[end];
+    grid-template-rows: 1fr;
+    align-items: center;
+  }
+
+  .logo_ingreso {
+    grid-column: start/ linea2;
+    grid-row: 1;
+    width: 100%;
+    background-image: url(../img/logo_contipo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 68vh;
+  }
+
+  .accion_ingreso {
+    grid-column: linea2/end;
+    grid-row: 1;
+    justify-self: center;
+  }
+
+  /* ---------REGISTRO---------- */
+  .logo_registro {
+    grid-column: start /linea2;
+    grid-row: 1;
+    width: 100%;
+    background-image: url(../img/logo_contipo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 58vh;
+  }
+
+  .accion_registro {
+    grid-column: linea2 /end;
+    grid-row: 1;
+    justify-self: center;
+  }
+
+  /* seccion_noticias---------------*/
+  .seccion_noticias {
+    margin: 0px 16px;
+    display: grid;
+    grid-template-columns: [start]1fr[linea2] 1fr[end];
+    grid-template-rows: [start]65px[linea2] 1fr[end];
+    gap: 32px;
+  }
+
+  .header {
+    grid-column: start/end;
+  }
+
+  .navbar_app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 97%;
+    align-items: flex-start;
+    padding-top: 3%;
+  }
+
+  .navbar_app h1 {
+    padding-top: 0;
+  }
+
+  .content1 {
+    display: grid;
+    grid-column: start/linea2;
+    grid-row: linea2/end;
+  }
+
+  .content2 {
+    grid-column: linea2/end;
+    grid-row: linea2/end;
+  }
+
+  .navbar_config {
+    display: flex;
+    justify-content: space-between;
+    margin: 40.5px 16px 13.5px 16px;
+    align-items: center;
+  }
+
+  /* NOticia-------tipo2 */
+  .seccion_estudiantes {
+    margin: 0px 16px;
+    display: grid;
+    grid-template-columns: [start]1fr[linea2] 1fr[end];
+    grid-template-rows: [start]65px[linea2] 1fr[end];
+    gap: 32px;
+  }
+
+  .tend_noticia_tipe1 {
+    grid-auto-columns: start/end;
+    grid-column: start/end;
+  }
+
+  .content_tend_tipe1 {
+    grid-auto-columns: start/end;
+    grid-column: start/end;
+    display: grid;
+    grid-template-columns: [start]1fr[linea2] 1fr[end];
+  }
+
+  /* ------estudiante------- */
+  .estudiantes_info {
+    margin: 0px var(--space2);
+    /* display: grid; */
+    grid-column: start/end;
+  }
+
+  .card_estudiante_info {
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
 }
 
 /* --------------------------- DISPOSITIVOS LANDSCAPE Y iPAD-------- */
