@@ -1,0 +1,35 @@
+/*----------------- COMPONENTES BOTONES-------------------------- */
+.boton-uno {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    height: 48px;
+    width: 184px;
+    text-decoration: none;
+    border-radius: var(--space);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--space2);
+    font-weight: 400;
+}
+.boton-uno p{
+    margin-bottom: 0;
+    font-size: var(--medio);
+}
+
+.boton-dos {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    height: 40px;
+    width: 104px;
+    text-decoration: none;
+    border-radius: var(--space);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--space2);
+}
+
+.horizontal-boton{
+    display: flex;
+}

@@ -19,23 +19,15 @@
 .accion_ingreso {
     grid-column: start/end;
     grid-row: linea2/ end;
-    margin-top: 44px;
+    margin-top: 20%;
+    justify-self: center;
 }
 
-.accion_ingreso .boton {
-    margin: var(--space2);
-    background-color: var(--blue-color);
-    color: var(--white-color);
-    height: 44px;
-    text-decoration: none;
-    border-radius: var(--space);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: solid 2px var(--yellow-color);
+.accion_ingreso a{
+    width: 100%;
 }
-
 .accion_ingreso .invitado {
-    background: var(--gray-color);
-    border-bottom: none;
+    background: var(--white);
+    color: var(--gray-color);
+    border: solid var(--gray-color) 1px;
 }

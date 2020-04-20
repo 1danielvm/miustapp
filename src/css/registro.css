@@ -19,34 +19,39 @@
 .accion_registro {
     grid-column: start/end;
     grid-row: linea2/ end;
+    padding-top: 20px;
+    justify-self: center;
 }
 
 .accion_registro input {
-    background: var(--gray3-color);
-    height: 30px;
-    width: -webkit-fill-available;
+    background: var(--white2-color);
+    height: 27px;
+    width: 228px;
     margin: var(--space) var(--space2);
     border: none;
     border-radius: var(--space);
-    color: var(--gray-color);
+    color: var(--gray3-color);
     text-align: center;
-    font-size: var(--normal);
-    font-weight: 400;
+    font-size: var(--medio);
+    font-weight: 300;
+    display: flex;
+    flex-wrap: wrap;
 }
-
-.accion_registro .boton {
-    margin: var(--space2);
-    margin-top: 56px;
+.accion_registro .boton-dos{
     background-color: var(--blue-color);
     color: var(--white-color);
-    height: 44px;
+    height: 40px;
+    width: 104px;
     text-decoration: none;
     border-radius: var(--space);
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: solid 2px var(--yellow-color);
-    width: -webkit-fill-available;
-    font-family: var(--font1);
-    font-size: var(--normal);
+    margin: 20px 10px;
+}
+
+.accion_registro .invitado{
+    background: var(--white);
+    color: var(--gray-color);
+    border: solid var(--gray-color) 1px;
 }

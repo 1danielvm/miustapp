@@ -1,22 +1,22 @@
 /* ---------------------- SECCION NOTICIAS--------------- */
-.seccion_tendencias {
+.seccion_estudiantes {
     margin: 0px;
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.tendencias_info {
+.estudiantes_info {
     margin: 0px var(--space2);
 }
 
-.tendencias_info h2 {
+.estudiantes_info h2 {
     margin-top: var(--space);
     font-size: var(--titulo);
     color: var(--gray2-dark-color);
 }
 
 .card_content {
-    background: var(--gray2-color);
+    background: var(--white2-color);
     border-radius: var(--space);
 }
 
@@ -26,18 +26,16 @@
 
 .content_text h3 {
     font-size: var(--subtitulo);
-    color: var(--gray-color);
+    color: var(--gray2-dark-color);
     line-height: 24px;
+    font-weight: 600;
 }
 
 .content_text p {
     color: var(--gray2-dark-color);
-    font-size: (--normal);
-    line-height: 23px;
-}
-
-.content_text span {
-    color: var(--gray-color);
+    font-size: var(--normal);
+    line-height: 21px;
+    font-weight: 200;
 }
 
 .content_img img {
@@ -45,26 +43,26 @@
     border-radius: var(--space);
 }
 
-.card_tendencia_info a {
+.card_estudiante_info a {
     text-decoration: none;
     display: flex;
 }
 
-.card_tendencia_info .boton {
+.card_estudiante_info .boton {
     margin-top: var(--space);
     margin-bottom: var(--space2);
-    width: 100%;
-    height: 42px;
+    width: 125px;
+    height: 32px;
     background: var(--blue-color);
-    border-bottom: solid 2px var(--yellow-color);
-    font-size: var(--normal);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: var(--space);
 }
 
-.card_tendencia_info .boton p {
+.card_estudiante_info .boton p {
+    font-size: var(--medio);
     color: var(--white-color);
     margin: 0;
+    font-weight: 300;
 }

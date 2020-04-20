@@ -31,11 +31,14 @@
 
 .datos_directorio .text h3 {
     font-size: var(--subtitulo);
-    color: var(--gray-color);
+    color: var(--blue2-color);
     margin-top: 0;
 }
 
 .datos_directorio .text p {
     margin-left: var(--space2);
     color: var(--gray2-dark-color);
+    font-size: var(--normal);
+    margin-bottom: var(--space);
+    font-weight: 400;
 }

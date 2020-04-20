@@ -12,7 +12,7 @@
     --menu: 10px;
     /* -------- colores------ */
     --white-color: #FFFFFF;
-    --white2-color: #F9F9F9;
+    --white2-color: #F8F8F8;
     --gray-color: #969696;
     --gray2-color: #EEEEEE;
     --gray3-color: #CBCBCB;
@@ -20,6 +20,7 @@
     --gray2-dark-color: #47494D;
     --blue-color: #34507D;
     --blue2-color: #3B8CC5;
+    --blue3-color: #2A73A5;
     --black-color: #000000;
     --red-color: #FD3B2F;
     --yellow-color: #FDBB26;
@@ -28,6 +29,36 @@
     --space2: 16px;
     --space3: 32px;
     --space4: 64px;
+    /* -------- botones------ */
+    --boton-uno: {
+        background-color: var(--blue-color);
+        color: var(--white-color);
+        height: 48px;
+        width: 184px;
+        text-decoration: none;
+        border-radius: var(--space);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: var(--space2);
+    };
+
+    --boton-dos: {
+        margin: var(--space2);
+        margin-top: 56px;
+        background-color: var(--blue-color);
+        color: var(--white-color);
+        height: 44px;
+        text-decoration: none;
+        border-radius: var(--space);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: solid 2px var(--yellow-color);
+        width: -webkit-fill-available;
+        font-family: var(--font1);
+        font-size: var(--normal);
+    };
 }
 
 

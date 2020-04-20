@@ -12,34 +12,53 @@
 
 .accion_mapa {
     margin-top: var(--space4);
+    justify-content: center;
+    margin: 0;
+    display: flex;
 }
-
+.datos_mapa h2{
+    font-size: var(--titulo);
+    color: var(--gray2-dark-color);
+    margin: var(--space3) 0px;
+}
+.accion_mapa form{
+    width: 228px;
+        justify-content: flex-end;
+        display: flex;
+        flex-wrap: wrap;
+}
 .accion_mapa input {
-    background: var(--gray3-color);
+    background: var(--white2-color);
     height: 30px;
     width: -webkit-fill-available;
     margin: var(--space) var(--space2);
     border: none;
     border-radius: var(--space);
-    color: var(--gray-color);
-    text-align: center;
-    font-size: var(--normal);
+    padding-left: var(--space2);
+    color: var(--gray3-color);
+    font-size: var(--medio);
     font-weight: 400;
+}
+.accion_mapa p {
+   width: -webkit-fill-available;
+   margin: 0px var(--space2);
+   font-size: var(--medio);
+   font-weight: 300;
+   color: var(--gray2-dark-color);
 }
 
 .accion_mapa .boton {
-    margin: var(--space2);
-    margin-top: 56px;
+    margin: var(--space);
     background-color: var(--blue-color);
     color: var(--white-color);
     height: 44px;
     text-decoration: none;
     border-radius: var(--space);
-    border-bottom: solid 2px var(--yellow-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: -webkit-fill-available;
+    width: 95px;
     font-family: var(--font1);
     font-size: var(--normal);
+    padding: 0;
 }

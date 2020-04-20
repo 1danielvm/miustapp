@@ -3,8 +3,6 @@
     border-radius: var(--space2);
     position: relative;
     background: var(--white-color);
-    top: -16px;
-    padding: var(--space2);
 }
 
 .content_text_tend2 h3 {
@@ -29,4 +27,21 @@ p.descripcion {
     font-size: (--normal);
     font-weight: 200;
     color: var(--gray2-dark-color);
+}
+.noticia-dos{
+    overflow-x: scroll;
+    margin-bottom: var(--space3);
+}
+.noticia-dos a{
+    display: flex;
+    overflow-x: scroll;
+}
+.img_noticia-dos{
+    margin-right: 10px;
+}
+
+.img_noticia-dos img{
+    height: 209px;
+    width: 152px;
+    object-fit: cover;
 }

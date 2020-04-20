@@ -6,11 +6,11 @@
     padding: 0.5px 0px;
     position: fixed;
     display: grid;
-    grid-template-rows: 48px;
+    grid-template-rows: 44px;
     grid-template-columns: [start] 1fr [linea2] 375px [linea3] 1fr [end];
     bottom: 0;
     left: 0;
-    background-color: var(--white2-color);
+    background-color: var(--blue-color);
     z-index: 10;
 }
 
@@ -25,7 +25,7 @@
     margin: 0;
     padding: 0;
     display: grid;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .menu_icono {
@@ -36,39 +36,47 @@
 .menu_icono p {
     font-size: var(--menu);
     text-align: inherit;
-    color: var(--gray-color);
-}
-
-.menu_icono.activo p {
     color: var(--blue2-color);
 }
 
+.menu_icono.activo p {
+    color: var(--white-color);
+}
+
 .menu_icono.disable p {
-    color: var(--gray3-color);
+    color: var(--blue3-color);
 }
 
 path.inactivo {
-    fill: var(--gray-color);
-}
-
-path.activo {
     fill: var(--blue2-color);
 }
 
+path.activo {
+    fill: var(--white-color);
+}
+
 path.disable {
-    fill: var(--gray3-color);
+    fill: var(--blue3-color);
 }
 
 path.button {
     fill: var(--white-color);
 }
-
+path.carrusel{
+    fill: var(--gray2-dark-color);
+}
 .navbar_app {
     display: flex;
     justify-content: space-between;
     margin: 11.5px 0px 0px 0px;
     align-items: center;
     width: 97%;
+    align-items: flex-start;
+    padding-top: 5%;
+}
+
+.navbar_app h1 {
+    padding-top: 12%;
 }
 
 .navbar {
@@ -80,47 +88,4 @@ path.button {
     padding-bottom: 70px;
 }
 
-/* ---------------------- DATOS USUARIO --------------- */
-.seccion_datos_user {
-    margin: 0px 16px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: [start] 1fr [linea2] 2fr[end];
-}
 
-.seccion_datos_user h2 {
-    color: var(--gray2-dark-color);
-    font-size: var(--titulo);
-    margin: 20px 0px;
-}
-
-.seccion_datos_user .content_svg {
-    margin: 2px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    background: var(--gray-color);
-    border-radius: 50%;
-    height: 105px;
-    width: 105px;
-}
-
-path.user {
-    fill: var(--white2-color);
-}
-
-.datos_user {
-    margin-top: var(--space2);
-    border-top: 2px solid var(--gray3-color);
-}
-
-.text {
-    margin-top: var(--space2);
-    color: var(--black-color);
-    font-weight: 300;
-    font-size: var(--medio);
-}
-
-.text span {
-    color: var(--gray-color)
-}
