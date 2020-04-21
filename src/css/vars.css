@@ -159,7 +159,10 @@
   }
 
   /* seccion_noticias---------------*/
-  .seccion_noticias {
+  .seccion_noticias,
+  .seccion_estudiantes,
+  .seccion_directorio {
+
     margin: 0px 16px;
     display: grid;
     grid-template-columns: [start]1fr[linea2] 1fr[end];
@@ -203,14 +206,6 @@
   }
 
   /* NOticia-------tipo2 */
-  .seccion_estudiantes {
-    margin: 0px 16px;
-    display: grid;
-    grid-template-columns: [start]1fr[linea2] 1fr[end];
-    grid-template-rows: [start]65px[linea2] 1fr[end];
-    gap: 32px;
-  }
-
   .tend_noticia_tipe1 {
     grid-auto-columns: start/end;
     grid-column: start/end;
@@ -226,7 +221,6 @@
   /* ------estudiante------- */
   .estudiantes_info {
     margin: 0px var(--space2);
-    /* display: grid; */
     grid-column: start/end;
   }
 
@@ -235,6 +229,11 @@
     grid-column: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
+  }
+  /* ---------_DIRECTORIO----------- */
+  .datos_directorio {
+    grid-column: start/end;
+    grid-row: linea2 / end;
   }
 }
 
