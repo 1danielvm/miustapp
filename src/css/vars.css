@@ -74,6 +74,7 @@
 
 /* --------------------------- DISPOSITIVOS LANDSCAPE-------- */
 @media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
+  /* ---------------------- ONBOARDING --------------------*/
   .card_onboarding {
     display: grid;
     grid-template-columns: [start]1fr[line2]1fr[end];
@@ -97,24 +98,32 @@
     flex-wrap: wrap;
     justify-content: center;
     text-align: -webkit-center;
-    align-self: center;
+    align-self: flex-end;
     margin-bottom: var(--space3);
-    width: 80%;
+    width: 56%;
+    justify-self: center;
+  }
+
+  .info-onboarding ul{
+    list-style: none;
+    padding-left: var(--space);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25%;
   }
 
   .boton-cuatro {
     text-align: center;
     background-color: var(--blue-color);
     border-radius: var(--space);
-    width: 167.48px;
+    width: 180px;
     height: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 16px;
   }
 
-  /* ------Ingreso---------- */
+  /* --------------------- INGRESO ----------------- */
   .ingreso {
     height: 100vh;
     display: grid;
@@ -140,7 +149,7 @@
     justify-self: center;
   }
 
-  /* ---------REGISTRO---------- */
+  /* ------------------- REGISTRO ------------------ */
   .logo_registro {
     grid-column: start /linea2;
     grid-row: 1;
@@ -158,18 +167,16 @@
     justify-self: center;
   }
 
-  /* seccion_noticias---------------*/
+  /*------------------- NOTICIAS -------------------*/
   .seccion_noticias,
   .seccion_estudiantes,
   .seccion_directorio,
   .seccion_mapa,
-  .seccion_notas,
   .seccion_horario {
-
     margin: 0px var(--space4);
     display: grid;
     grid-template-columns: [start]1fr[linea2] 1fr[end];
-    grid-template-rows: [start]65px[linea2] 1fr[end];
+    grid-template-rows: [start]40px[linea2] 1fr[end];
     gap: var(--space2) var(--space3);
   }
 
@@ -180,10 +187,9 @@
   .navbar_app {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 97%;
-    align-items: flex-start;
-    padding-top: 3%;
+    align-items: center;
+    padding-top: 0%;
   }
 
   .navbar_app h1 {
@@ -193,16 +199,21 @@
   .content1 {
     display: grid;
     grid-column: start/linea2;
-    /* grid-row: linea2/end; */
     align-content: center;
   }
 
   .content2 {
     grid-column: linea2/end;
-    /* grid-row: linea2/end; */
     align-content: center;
   }
-  .content3{
+
+  .content3 {
+    grid-column: start/end;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .content4 {
     grid-column: start/end;
     display: flex;
   }
@@ -214,7 +225,12 @@
     align-items: center;
   }
 
-  /* NOticia-------tipo2 */
+  .menu_navegar{
+    grid-template-columns: 1fr 1fr 1fr;
+    width: -webkit-fill-available;
+  }
+
+  /*----------------- NOTICIA TIPO 2 ------------- */
   .tend_noticia_tipe1 {
     grid-auto-columns: start/end;
     grid-column: start/end;
@@ -227,7 +243,7 @@
     grid-template-columns: [start]1fr[linea2] 1fr[end];
   }
 
-  /* ------estudiante------- */
+  /* ------------------ ESTUDIANTE ---------------- */
   .estudiantes_info {
     margin: 0px var(--space2);
     grid-column: start/end;
@@ -240,7 +256,7 @@
     gap: 32px;
   }
 
-  /* ---------_DIRECTORIO----------- */
+  /* ------------------ DIRECTORIO --------------- */
   .datos_directorio {
     grid-column: start/end;
     grid-row: linea2 / end;
@@ -252,31 +268,74 @@
     grid-column: start/end;
   }
 
-  /* ---------MAPA--------------- */
-  .datos_mapa, .datos_indicaciones {
+  /* ------------------- MAPA --------------------- */
+  .datos_mapa,
+  .datos_indicaciones {
     grid-column: start/end;
     display: grid;
     grid-template-columns: [start]1fr[linea2] 1fr[end];
     gap: var(--space4);
     align-items: flex-start;
   }
-  .indicaciones_titel h1{
+
+  .mapa_fondo img{
+    width: 95%;
+  }
+
+  .indicaciones_titel h1 {
     text-align: center;
     margin: 0;
   }
+
   h2.subtitel_mapa {
     margin-top: 0;
   }
-  .indicaciones_text{
+
+  .indicaciones_text {
     margin-top: 0;
   }
-  /* ---------------NOTAS------------ */
-  .datos_notas_info{
+
+  /* ------------------- NOTAS --------------------- */
+  .seccion_notas {
+    margin: 0px var(--space4);
+    display: grid;
+    grid-template-columns: [start]1fr[linea2] 1fr[end];
+    grid-template-rows: [start]65px[linea2] 1fr[end];
+    gap: var(--space) var(--space3);
+  }
+
+  .datos_notas_info {
     grid-column: start/end;
     display: grid;
     grid-template-columns: [start]1fr[linea2] 1fr[end];
     gap: var(--space4);
     align-items: flex-start;
+  }
+
+  .datos_notas_info .content4 .content1{
+    text-align: end;
+  }
+
+  .datos_notas_info .content4{
+    flex-direction: row-reverse;
+    margin-bottom: -60px;
+  }
+
+  .info_grafica img{
+    width: 40%;
+  }
+
+  /* ------------------------- HORARIO ----------------------------- */
+  .content_carrusel{
+    grid-column: start / end;
+  }
+  .container_carrusel{
+    margin-top: var(--space);
+    display: flex;
+  }
+
+  .container_carrusel .item{
+    margin: var(--space);
   }
 }
 

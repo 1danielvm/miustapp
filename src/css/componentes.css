@@ -62,9 +62,11 @@ path.disable {
 path.button {
     fill: var(--white-color);
 }
-path.carrusel{
+
+path.carrusel {
     fill: var(--gray2-dark-color);
 }
+
 .navbar_app {
     display: flex;
     justify-content: space-between;
@@ -87,5 +89,3 @@ path.carrusel{
 .container {
     padding-bottom: 70px;
 }
-
-

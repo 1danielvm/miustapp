@@ -22,6 +22,7 @@
 .datos_directorio .text {
     margin-bottom: var(--space3);
     margin-top: 0;
+    margin-left: var(--space);
 }
 
 .datos_directorio .text h2 {

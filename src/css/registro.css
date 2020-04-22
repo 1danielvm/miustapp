@@ -37,7 +37,8 @@
     display: flex;
     flex-wrap: wrap;
 }
-.accion_registro .boton-dos{
+
+.accion_registro .boton-dos {
     background-color: var(--blue-color);
     color: var(--white-color);
     height: 40px;
@@ -50,7 +51,7 @@
     margin: 20px 10px;
 }
 
-.accion_registro .invitado{
+.accion_registro .invitado {
     background: var(--white);
     color: var(--gray-color);
     border: solid var(--gray-color) 1px;

@@ -4,9 +4,11 @@
     display: grid;
     grid-template-columns: 1fr;
 }
-.content1{
-  display: contents;
+
+.content1 {
+    display: contents;
 }
+
 .seccion_noticias h3 {
     font-size: var(--titulo);
     color: var(--gray2-dark-color);
@@ -16,18 +18,19 @@
     margin-bottom: var(--space3);
     display: flex;
     overflow-x: scroll;
-        height: 227px;
+    height: 227px;
 }
 
 
 .card_tendencia {
     height: 226px;
-    width: 240px;;
+    width: 240px;
+    ;
     border-radius: var(--space);
     margin-right: var(--space2);
 }
 
-.img_tendencia{
+.img_tendencia {
     height: 226px;
     border-radius: var(--space);
 }
@@ -41,7 +44,7 @@
     border-radius: var(--space);
 }
 
-.background-card{
+.background-card {
     background: transparent linear-gradient(180deg, #FFFFFF 0%, #000000 100%) 0% 0% no-repeat padding-box;
     mix-blend-mode: multiply;
     z-index: 2;
@@ -63,22 +66,25 @@
     margin: 0;
     padding: 20px;
 }
-.parrafo-card span{
+
+.parrafo-card span {
     font-size: var(--pequeno);
     font-weight: 300;
 }
-.parrafo-card p{
+
+.parrafo-card p {
     font-size: var(--medio);
-      padding: 0;
-      margin: 0;
+    padding: 0;
+    margin: 0;
 }
-.parrafo-card h4{
+
+.parrafo-card h4 {
     font-size: var(--medio);
     font-weight: 400;
-      padding: 0;
-      margin: 0;
-      color: var(--blue2-color);
-      text-decoration: underline;
+    padding: 0;
+    margin: 0;
+    color: var(--blue2-color);
+    text-decoration: underline;
 }
 
 .card_recientes {
@@ -131,11 +137,13 @@
     color: var(--gray-color);
     margin: 0;
 }
-.menu_navegar{
+
+.menu_navegar {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--space);
 }
+
 .menu_navegar a {
     text-decoration: none;
 }
@@ -150,20 +158,24 @@
     border-radius: var(--space);
 }
 
-.boton.dos{
+.boton.dos {
     background: #256472;
 }
-.boton.tres{
+
+.boton.tres {
     background: #FF843B;
 }
-.boton.cuatro{
+
+.boton.cuatro {
     background: #34B591;
 }
-.boton.cinco{
+
+.boton.cinco {
     background: #F1C23F;
 }
-.boton.seis{
-    background:#48B8D6;
+
+.boton.seis {
+    background: #48B8D6;
 }
 
 .menu_navegar .boton p {

@@ -19,31 +19,33 @@
 }
 
 .seccion_config {
-        padding-left: var(--space2);
-        padding-right: var(--space2);
-        display: grid;
-        grid-template-columns: [start]1fr[linea2] 1fr[linea3] 1fr[end];
-        grid-template-rows: [start].6fr[linea2] .7fr[linea3] 1fr[end];
+    padding-left: var(--space2);
+    padding-right: var(--space2);
+    display: grid;
+    grid-template-columns: [start]1fr[linea2] 1fr[linea3] 1fr[end];
+    grid-template-rows: [start].6fr[linea2] .7fr[linea3] 1fr[end];
 }
 
 .seccion_config h1 {
     font-size: var(--seccion);
     color: var(--gray2-dark-color);
 }
-.seccion_config .header{
+
+.seccion_config .header {
     grid-column: start / end;
     grid-row: start / linea2;
 }
+
 .menu_config {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        width: 100%;
-        gap: var(--space);
-        justify-content: center;
-        margin-top: 30px;
-        grid-column: start / end;
-        grid-row: linea3 / end;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    gap: var(--space);
+    justify-content: center;
+    margin-top: 30px;
+    grid-column: start / end;
+    grid-row: linea3 / end;
 }
 
 .item_config {
@@ -52,7 +54,7 @@
 }
 
 .menu_config a {
-    background:var(--blue-color);
+    background: var(--blue-color);
     font-size: var(--normal);
     display: flex;
     padding: var(--space2);
@@ -256,7 +258,8 @@ path.user {
     font-size: var(--medio);
     margin-bottom: var(--space);
 }
-.text p{
+
+.text p {
     margin: 0;
 }
 
@@ -264,18 +267,18 @@ path.user {
     color: var(--gray-color)
 }
 
-.content_svg{
-        grid-column: linea2 / linea3;
-        grid-row: start / linea2;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: var(--gray-color);
-        border-radius: 50%;
-        object-fit: cover;
-        width: 150px;
-        height: 150px;
-        margin-top: var(--space3);
-        margin: 32px 97px 0px;
+.content_svg {
+    grid-column: linea2 / linea3;
+    grid-row: start / linea2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gray-color);
+    border-radius: 50%;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    margin-top: var(--space3);
+    margin: 32px 97px 0px;
 }

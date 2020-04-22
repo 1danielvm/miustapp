@@ -8,32 +8,34 @@
 .content_carrusel {
     margin: 0px var(--space2);
 }
-.nav_carrusel{
+
+.nav_carrusel {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.nav_carrusel h2{
+.nav_carrusel h2 {
     font-size: var(--titulo);
     color: var(--gray2-dark-color);
     margin-top: var(--space2);
 }
-.nav_carrusel span{
+
+.nav_carrusel span {
     color: var(--gray3-color);
 }
 
-.nav_carrusel a{
+.nav_carrusel a {
     display: contents;
 }
 
-.container_carrusel{
+.container_carrusel {
     display: grid;
     gap: var(--space2);
     margin-top: var(--space3);
 }
 
-.container_carrusel .item{
+.container_carrusel .item {
     display: grid;
     grid-template-columns: 110px 1fr;
     border-radius: var(--space);
@@ -45,7 +47,8 @@
     padding: 16px 16px 16px 8px;
     border-radius: 0px 8px 8px 0px;
 }
-.item .left{
+
+.item .left {
     background: var(--blue-color);
     height: 100%;
     color: var(--white-color);
@@ -56,6 +59,7 @@
     border-radius: 8px 0px 0px 8px;
     line-height: 26px;
 }
+
 .item .right2 {
     background-image: url(../img/img_horario.png);
     background-size: cover;
@@ -67,7 +71,8 @@
     align-items: center;
     line-height: 19px;
 }
-.item .left2{
+
+.item .left2 {
     background: var(--white2-color);
     height: 107px;
     color: var(--gray2-dark-color);
@@ -78,27 +83,30 @@
     border-radius: 8px 0px 0px 8px;
 }
 
-.container_carrusel h3{
+.container_carrusel h3 {
     font-size: var(--subtitulo);
     margin: 0;
     font-weight: 500;
 }
-.container_carrusel h4{
+
+.container_carrusel h4 {
     font-size: var(--normal);
     margin-bottom: 4px;
     color: var(--gray2-dark-color);
     font-weight: 400;
     line-height: 19px;
 }
-.container_carrusel p{
+
+.container_carrusel p {
     font-size: var(--medio);
-       margin: 0;
-       margin-top: var(--space);
+    margin: 0;
+    margin-top: var(--space);
     color: var(--gray2-dark-color);
     font-weight: 200;
     line-height: 16px;
 }
-.right2 p{
+
+.right2 p {
     font-size: var(--normal);
     margin: 0;
     margin-top: var(--space);

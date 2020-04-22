@@ -12,7 +12,8 @@
     margin-bottom: var(--space2);
     font-weight: 400;
 }
-.boton-uno p{
+
+.boton-uno p {
     margin-bottom: 0;
     font-size: var(--medio);
 }
@@ -30,11 +31,11 @@
     margin-bottom: var(--space2);
 }
 
-.horizontal-boton{
+.horizontal-boton {
     display: flex;
 }
 
-.boton-cuatro{
+.boton-cuatro {
     text-align: center;
     background-color: var(--blue-color);
     border-radius: var(--space);
@@ -43,9 +44,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 16px;
 }
-.boton-cuatro p{
+
+.boton-cuatro p {
     color: var(--white-color);
     font-size: var(--medio);
     font-weight: 400;

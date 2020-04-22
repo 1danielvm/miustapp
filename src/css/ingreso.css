@@ -23,9 +23,10 @@
     justify-self: center;
 }
 
-.accion_ingreso a{
+.accion_ingreso a {
     width: 100%;
 }
+
 .accion_ingreso .invitado {
     background: var(--white);
     color: var(--gray-color);

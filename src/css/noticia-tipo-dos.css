@@ -28,19 +28,22 @@ p.descripcion {
     font-weight: 200;
     color: var(--gray2-dark-color);
 }
-.noticia-dos{
+
+.noticia-dos {
     overflow-x: scroll;
     margin-bottom: var(--space3);
 }
-.noticia-dos a{
+
+.noticia-dos a {
     display: flex;
     overflow-x: scroll;
 }
-.img_noticia-dos{
+
+.img_noticia-dos {
     margin-right: 10px;
 }
 
-.img_noticia-dos img{
+.img_noticia-dos img {
     height: 209px;
     width: 152px;
     object-fit: cover;
