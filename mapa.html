@@ -10,7 +10,7 @@
   <link rel="icon" sizes="192x192" href="./dist/img/logo_sitio.png">
   <meta name="description" content="Aplicación hecha por estudiantes para estudiantes. ENJOY.">
   <meta name="author" content="Daniel Valderrama Mendoza, Juan David Rey Peña & Julian Esteban Espinosa Orozco">
-  <title>Mapa invitado</title>
+  <title>Mapa</title>
 </head>
 
 <body>
@@ -97,21 +97,27 @@
         <!-- Aquí empieza sección -->
       </div>
       <div class="datos_mapa">
-        <div class="content1">
-          <article class="mapa_fondo">
-            <img src="./dist/img/mapa.png" alt="imagen mapa">
-          </article>
+        <div class="animsition" data-animsition-in-class="fade-in-left-sm" data-animsition-in-duration="1000"
+          data-animsition-out-class="fade-out-left-sm" data-animsition-out-duration="800">
+          <div class="content1">
+            <article class="mapa_fondo">
+              <img src="./dist/img/mapa.png" alt="imagen mapa">
+            </article>
+          </div>
         </div>
-        <div class="content2">
-          <h2 class="subtitel_mapa">Ubícate</h2>
-          <div class="accion_mapa">
-            <form action="./indicaciones.html">
-              <p>¿En dónde estás?</p>
-              <input type="search" id="psw" placeholder="Ej: 207B" required>
-              <p>¿A dónde quieres ir?</p>
-              <input type="search" id="psw" placeholder="Ej: 302B" required>
-              <input class="boton" type="submit" value="Buscar">
-            </form>
+        <div class="animsition" data-animsition-in-class="zoom-in-sm" data-animsition-in-duration="1000"
+          data-animsition-out-class="zoom-out-sm" data-animsition-out-duration="800">
+          <div class="content2">
+            <h2 class="subtitel_mapa">Ubícate</h2>
+            <div class="accion_mapa">
+              <form action="./indicaciones.html">
+                <p>¿En dónde estás?</p>
+                <input type="search" id="psw" placeholder="Ej: 207B" required>
+                <p>¿A dónde quieres ir?</p>
+                <input type="search" id="psw" placeholder="Ej: 302B" required>
+                <input class="boton" type="submit" value="Buscar">
+              </form>
+            </div>
           </div>
         </div>
       </div>

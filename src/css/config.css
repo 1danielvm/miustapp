@@ -2,7 +2,7 @@
 .navbar_config {
     display: flex;
     justify-content: space-between;
-    margin: 11.5px 16px 13.5px 16px;
+    margin: var(--space3) var(--space2);
     align-items: center;
 }
 

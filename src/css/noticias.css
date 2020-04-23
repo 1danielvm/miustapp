@@ -9,6 +9,10 @@
     display: contents;
 }
 
+.content3{
+    display: contents;
+}
+
 .seccion_noticias h3 {
     font-size: var(--titulo);
     color: var(--gray2-dark-color);

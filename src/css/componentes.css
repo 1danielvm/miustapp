@@ -12,6 +12,8 @@
     left: 0;
     background-color: var(--blue-color);
     z-index: 10;
+    animation: none;
+    transition: none;
 }
 
 .menu_center {
