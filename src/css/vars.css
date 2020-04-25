@@ -219,7 +219,7 @@
   .navbar_config {
     display: flex;
     justify-content: space-between;
-    margin: 40.5px 64px 0px;
+    margin: 40.5px 64px 16px;
     align-items: center;
   }
 
@@ -335,6 +335,60 @@
   .container_carrusel .item{
     margin: var(--space);
   }
+  .hs{
+    grid-column: start/end;
+  }
+  li.uno{
+grid-column: start/ linea2;
+  }
+  li.dos{
+grid-column: linea2/ linea3;
+  }
+  li.tres{
+grid-column: linea3/ linea4;
+  }
+  li.cuatro{
+grid-column: linea4/ linea5;
+  }
+  li.cinco{
+grid-column: linea5/ end;
+  }
+  /* ---------------CONFIGURACIÓN----------------- */
+ .seccion_config {
+   margin: 0px var(--space4);
+   display: grid;
+   grid-template-columns: [start]1fr[linea2] 1fr[end];
+   grid-template-rows: [start]40px[linea2] .7fr[linea3] .8fr [linea4].9fr[end];
+   gap: var(--space2) var(--space3);
+ }
+ .datos_user {
+   margin-top: var(--space2);
+   grid-column: linea2 / end;
+   grid-row: linea2 / linea3;
+   display: grid;
+   grid-template-rows: [start]1fr [linea2] 1fr [end];
+ }
+ .ilustra_config {
+   grid-row: linea4/end;
+   grid-column: start/end;
+   height: auto;
+   background: url(../img/img_confing.png);
+   border-radius: var(--space);
+   background-size: contain;
+   background-repeat: no-repeat;
+   grid-row-end: none;
+ }
+ .menu_config {
+   display: grid;
+   grid-template-columns: [start]1fr[linea2] 1fr[end];
+   align-items: center;
+   width: 100%;
+   gap: var(--space);
+   justify-content: center;
+   margin-top: var(--space);
+   grid-column: start / end;
+   grid-row: linea3/linea4;
+ }
 }
 
 /* --------------------------- DISPOSITIVOS LANDSCAPE Y iPAD-------- */

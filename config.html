@@ -75,8 +75,8 @@
     <div class="menu_rigth"></div>
   </div>
   <!-- Aquí acaba el tapbar -->
-  <div class="animsition container" data-animsition-in-class="fade-in-right" data-animsition-in-duration="1000"
-    data-animsition-out-class="fade-out-right" data-animsition-out-duration="800">
+  <div class="animsition container" data-animsition-in-class="fade-in" data-animsition-in-duration="1000"
+    data-animsition-out-class="fade-out" data-animsition-out-duration="800">
     <!-- Aquí empieza el navbar -->
     <div class="navbar_config">
       <div class="navbar_atras" id="back">
@@ -94,47 +94,58 @@
     <div class="seccion_config">
       <div class="header">
         <h1>Configuración</h1>
-        <div class="content_svg">
-          <svg xmlns="http://www.w3.org/2000/svg" width="103.13" height="125.3" viewBox="0 0 18.457 21">
-            <g transform="translate(3.73)">
-              <g transform="translate(0)">
-                <path class="user" d="M126.5,0A5.5,5.5,0,1,0,132,5.5,5.505,5.505,0,0,0,126.5,0Z"
-                  transform="translate(-121)" />
+        <div class="animsition" data-animsition-in-class="fade-in-right-sm" data-animsition-in-duration="1000"
+          data-animsition-out-class="fade-out-right-sm" data-animsition-out-duration="800">
+          <div class="content_svg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="83" height="100,6" viewBox="0 0 18.457 21">
+              <g transform="translate(3.73)">
+                <g transform="translate(0)">
+                  <path class="activo" d="M126.5,0A5.5,5.5,0,1,0,132,5.5,5.505,5.505,0,0,0,126.5,0Z"
+                    transform="translate(-121)" />
+                </g>
               </g>
-            </g>
-            <g transform="translate(0 12.365)">
-              <g transform="translate(0)">
-                <path class="user"
-                  d="M47.118,302.37A7.921,7.921,0,0,0,41.459,300H39a8.04,8.04,0,0,0-8,8.024.613.613,0,0,0,.615.611H48.842a.613.613,0,0,0,.615-.611A7.985,7.985,0,0,0,47.118,302.37Z"
-                  transform="translate(-31 -300)" />
+              <g transform="translate(0 12.365)">
+                <g transform="translate(0)">
+                  <path class="activo"
+                    d="M47.118,302.37A7.921,7.921,0,0,0,41.459,300H39a8.04,8.04,0,0,0-8,8.024.613.613,0,0,0,.615.611H48.842a.613.613,0,0,0,.615-.611A7.985,7.985,0,0,0,47.118,302.37Z"
+                    transform="translate(-31 -300)" />
+                </g>
               </g>
-            </g>
-          </svg>
+            </svg>
+          </div>
         </div>
       </div>
-      <div class="datos_user">
-        <div class="text">
-          <p><span>Nombre</span></p>
-          <p>Crístian Martínez</p>
+      <div class="datos_user animsition" data-animsition-in-class="fade-in-left-sm" data-animsition-in-duration="1000"
+        data-animsition-out-class="fade-out-left-sm" data-animsition-out-duration="800">
+
+
+        <div class="datos_uno">
+          <div class="text2">
+            <p>Crístian Martínez</p>
+            <p><span>cristianmartinezo@usantotomas.edu.co</span></p>
+          </div>
         </div>
-        <div class="text">
-          <p><span>Facultad</span></p>
-          <p>Diseño Gráfico</p>
+        <div class="datos_dos">
+          <div class="text">
+            <p><span>Facultad</span></p>
+            <p>Diseño Gráfico</p>
+          </div>
+          <div class="text">
+            <p><span>Documento</span></p>
+            <p>1014872392</p>
+          </div>
+          <div class="text">
+            <p><span>Código</span></p>
+            <p>1231244</p>
+          </div>
         </div>
-        <div class="text">
-          <p><span>Código</span></p>
-          <p>1231244</p>
-        </div>
-        <div class="text">
-          <p><span>Documento</span></p>
-          <p>1014872392</p>
-        </div>
-        <div class="text">
-          <p><span>Contraseña</span></p>
-          <p>*********</p>
-        </div>
+
       </div>
-      <div class="menu_config">
+      
+      <div class="ilustra_config">
+      </div>
+      <div class="menu_config animsition" data-animsition-in-class="fade-in-up-sm" data-animsition-in-duration="1000"
+        data-animsition-out-class="fade-out-up-sm" data-animsition-out-duration="800">
         <a href="#modal_config_notification" id="show-modal_config_notification">
           <div class="item_config">
             <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="21" viewBox="0 0 17.5 21">
@@ -210,15 +221,15 @@
           </div>
         </a>
         <a href="#modal_config_logout" id="show-modal_config_logout">
-          <div class="item_config">
-            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-              <path class="button"
+          <div class="item_logout">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+              <path class="inactivo"
                 d="M12.6,11.379a.858.858,0,0,0-.84.875v3.5a.859.859,0,0,1-.84.875H8.4V3.5A1.76,1.76,0,0,0,7.257,1.84l-.249-.087h3.913a.859.859,0,0,1,.84.875V5.254a.841.841,0,1,0,1.68,0V2.629A2.577,2.577,0,0,0,10.922,0H1.89A.637.637,0,0,0,1.8.023C1.76.02,1.721,0,1.68,0A1.718,1.718,0,0,0,0,1.754V17.5a1.76,1.76,0,0,0,1.144,1.663L6.2,20.923A1.676,1.676,0,0,0,6.721,21a1.718,1.718,0,0,0,1.68-1.75v-.875h2.52a2.577,2.577,0,0,0,2.52-2.625v-3.5A.858.858,0,0,0,12.6,11.379Zm0,0"
                 transform="translate(0 -0.004)" />
-              <path class="button logout_svg"
+              <path class="inactivo logout_svg"
                 d="M286.328,110.272l-3.361-3.361a.84.84,0,0,0-1.434.594v2.52h-3.361a.84.84,0,1,0,0,1.68h3.361v2.52a.84.84,0,0,0,1.434.594l3.361-3.361A.839.839,0,0,0,286.328,110.272Zm0,0"
                 transform="translate(-265.574 -102.166)" />
-            </svg>
+            </svg> -->
             <p>Cerrar seción</p>
           </div>
         </a>
@@ -242,11 +253,12 @@
   <aside id="modal_config_notification" class="modal_config_notification">
     <div class="content-modal_config_notification">
       <div class="btn-modal_config_notification">
-        <a href="#" class="close-modal_config_notification"><svg xmlns="http://www.w3.org/2000/svg" width="12"
-            height="21" viewBox="0 0 12 21">
+        <a href="#" class="logout" class="close-modal_config_notification"><svg xmlns="http://www.w3.org/2000/svg"
+            width="12" height="21" viewBox="0 0 12 21">
             <path class="inactivo back_svg"
               d="M3.621,10.5l7.939-7.939A1.5,1.5,0,1,0,9.439.439l-9,9a1.5,1.5,0,0,0,0,2.121l9,9a1.5,1.5,0,1,0,2.121-2.121Z" />
-          </svg></a>
+          </svg>
+        </a>
       </div>
     </div>
   </aside>

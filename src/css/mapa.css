@@ -24,14 +24,14 @@
 }
 
 .accion_mapa form {
-    width: 228px;
+    width: 155px;
     justify-content: flex-end;
     display: flex;
     flex-wrap: wrap;
 }
 
 .accion_mapa input {
-    background: var(--white2-color);
+    background: var(--white-color);
     height: 30px;
     width: -webkit-fill-available;
     margin: var(--space) var(--space2);
@@ -39,8 +39,9 @@
     border-radius: var(--space);
     padding-left: var(--space2);
     color: var(--gray3-color);
-    font-size: var(--medio);
+    font-size: var(--normal);
     font-weight: 400;
+    border: solid 1px var(--gray3-color);
 }
 
 .accion_mapa p {
