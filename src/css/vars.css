@@ -174,7 +174,7 @@
     margin: 0px var(--space4);
     display: grid;
     grid-template-columns: [start]1fr[linea2] 1fr[end];
-    grid-template-rows: [start]40px[linea2] 1fr[end];
+    grid-template-rows: [start]70px[linea2] 1fr[end];
     gap: var(--space2) var(--space3);
   }
 
@@ -195,7 +195,7 @@
   }
 
   .content1 {
-    display: grid;
+    display: block;
     grid-column: start/linea2;
     align-content: center;
   }
@@ -317,6 +317,7 @@
   .datos_notas_info .content4{
     flex-direction: row-reverse;
     margin-bottom: -60px;
+    align-items: center;
   }
 
   .info_grafica img{
