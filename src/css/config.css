@@ -29,11 +29,16 @@
 .seccion_config h1 {
     font-size: var(--seccion);
     color: var(--gray2-dark-color);
+    text-align: start;
+    width: 100%;
 }
 
 .seccion_config .header {
     grid-column: start / end;
     grid-row: start / linea2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .ilustra_config {
     grid-row: linea3/linea4;
@@ -309,7 +314,6 @@ path.user {
     width: 129px;
     height: 129px;
     margin-top: var(--space3);
-    margin: 32px 97px 0px;
 }
 
 .datos_uno {
