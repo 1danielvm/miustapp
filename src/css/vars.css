@@ -61,17 +61,18 @@
     width: -webkit-fill-available;
     font-family: var(--font1);
     font-size: var(--normal);
-  };
+  }
+
+  ;
 }
 
 /* -----------------------------------------------------------
 ---------------------------- INICIO MEDIA QUERYS------------
 -----------------------------------------------------------*/
-/* --------------------------- DISPOSITIVOS PORTRAIT-------- */
-@media only screen and (min-width: 320px) {}
 
 /* --------------------------- DISPOSITIVOS LANDSCAPE-------- */
 @media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
+
   /* ---------------------- ONBOARDING --------------------*/
   .card_onboarding {
     display: grid;
@@ -102,7 +103,7 @@
     justify-self: center;
   }
 
-  .info-onboarding ul{
+  .info-onboarding ul {
     list-style: none;
     padding-left: var(--space);
     display: flex;
@@ -166,7 +167,13 @@
   }
 
   /*------------------- NOTICIAS -------------------*/
-  .seccion_noticias,
+  .seccion_noticias {
+    margin: var(--space2) var(--space4);
+    display: grid;
+    grid-template-columns: [start]1fr[linea2] 1fr[end];
+    gap: var(--space2) var(--space3);
+  }
+
   .seccion_estudiantes,
   .seccion_directorio,
   .seccion_mapa,
@@ -180,6 +187,7 @@
 
   .header {
     grid-column: start/end;
+    padding: 32px 64px 8px 64px;
   }
 
   .navbar_app {
@@ -219,11 +227,11 @@
   .navbar_config {
     display: flex;
     justify-content: space-between;
-    margin: 40.5px 64px 16px;
+    margin: 16px 64px 16px 0px;
     align-items: center;
   }
 
-  .menu_navegar{
+  .menu_navegar {
     grid-template-columns: 1fr 1fr 1fr;
     width: -webkit-fill-available;
   }
@@ -235,10 +243,10 @@
   }
 
   .content_tend_tipe1 {
-    grid-auto-columns: start/end;
     grid-column: start/end;
     display: grid;
     grid-template-columns: [start]1fr[linea2] 1fr[end];
+    margin-top: var(--space2);
   }
 
   /* ------------------ ESTUDIANTE ---------------- */
@@ -276,7 +284,7 @@
     align-items: flex-start;
   }
 
-  .mapa_fondo img{
+  .mapa_fondo img {
     width: 95%;
   }
 
@@ -310,86 +318,116 @@
     align-items: flex-start;
   }
 
-  .datos_notas_info .content4 .content1{
+  .datos_notas_info .content4 .content1 {
     text-align: end;
   }
 
-  .datos_notas_info .content4{
+  .datos_notas_info .content4 {
     flex-direction: row-reverse;
     margin-bottom: -60px;
     align-items: center;
   }
 
-  .info_grafica img{
+  .info_grafica img {
     width: 40%;
   }
 
   /* ------------------------- HORARIO ----------------------------- */
-  .content_carrusel{
+  .content_carrusel {
     grid-column: start / end;
   }
-  .container_carrusel{
+
+  .container_carrusel {
     margin-top: var(--space);
     display: flex;
   }
 
-  .container_carrusel .item{
+  .container_carrusel .item {
     margin: var(--space);
   }
-  .hs{
+
+  .hs {
     grid-column: start/end;
   }
-  li.uno{
-grid-column: start/ linea2;
+
+  li.uno {
+    grid-column: start/ linea2;
   }
-  li.dos{
-grid-column: linea2/ linea3;
+
+  li.dos {
+    grid-column: linea2/ linea3;
   }
-  li.tres{
-grid-column: linea3/ linea4;
+
+  li.tres {
+    grid-column: linea3/ linea4;
   }
-  li.cuatro{
-grid-column: linea4/ linea5;
+
+  li.cuatro {
+    grid-column: linea4/ linea5;
   }
-  li.cinco{
-grid-column: linea5/ end;
+
+  li.cinco {
+    grid-column: linea5/ end;
   }
+
   /* ---------------CONFIGURACIÓN----------------- */
- .seccion_config {
-   margin: 0px var(--space4);
-   display: grid;
-   grid-template-columns: [start]1fr[linea2] 1fr[end];
-   grid-template-rows: [start]40px[linea2] .7fr[linea3] .8fr [linea4].9fr[end];
-   gap: var(--space2) var(--space3);
- }
- .datos_user {
-   margin-top: var(--space2);
-   grid-column: linea2 / end;
-   grid-row: linea2 / linea3;
-   display: grid;
-   grid-template-rows: [start]1fr [linea2] 1fr [end];
- }
- .ilustra_config {
-   grid-row: linea4/end;
-   grid-column: start/end;
-   height: auto;
-   background: url(../img/img_confing.png);
-   border-radius: var(--space);
-   background-size: contain;
-   background-repeat: no-repeat;
-   grid-row-end: none;
- }
- .menu_config {
-   display: grid;
-   grid-template-columns: [start]1fr[linea2] 1fr[end];
-   align-items: center;
-   width: 100%;
-   gap: var(--space);
-   justify-content: center;
-   margin-top: var(--space);
-   grid-column: start / end;
-   grid-row: linea3/linea4;
- }
+  .seccion_config {
+    margin: 0px var(--space4);
+    display: grid;
+    grid-template-columns: [start]1fr[linea2] 1fr[end];
+    gap: var(--space2) var(--space3);
+    grid-template-rows: [start] 1fr [linea2] 1fr[linea3] 1fr[end];
+    height: fit-content;
+  }
+
+  .datos_user {
+    margin: 23px 0px;
+    grid-row: start / linea2;
+    display: grid;
+    grid-template-rows: [start]1fr [linea2] 1fr [end];
+    grid-template-columns: [start]1fr[linea2] 1fr[end];
+    align-items: end;
+  }
+
+  .content_svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white2-color);
+    border: solid 3px var(--yellow-color);
+    border-radius: 50%;
+    object-fit: cover;
+    width: 129px;
+    height: 129px;
+    grid-column: start/linea2;
+    grid-row: start/end;
+  }
+
+  .ilustra_config {
+    grid-row: linea3/end;
+    grid-column: start/end;
+    height: auto;
+    background: url(../img/img_confing.png);
+    border-radius: var(--space);
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-row-end: none;
+  }
+
+  .menu_config {
+    display: grid;
+    grid-template-columns: [start]1fr[linea2] 1fr[end];
+    align-items: center;
+    width: 100%;
+    gap: var(--space);
+    justify-content: center;
+    margin-top: var(--space);
+    grid-column: start / end;
+    grid-row: linea2/linea3;
+  }
+  .modal_config_logout .content-modal_config_logout{
+    left: 60%;
+  }
 }
 
 /* --------------------------- DISPOSITIVOS LANDSCAPE Y iPAD-------- */

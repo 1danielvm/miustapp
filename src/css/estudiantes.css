@@ -1,6 +1,6 @@
 /* ---------------------- SECCION NOTICIAS--------------- */
 .seccion_estudiantes {
-    margin: 0px;
+    margin: 16px 0px;
     display: grid;
     grid-template-columns: 1fr;
 }

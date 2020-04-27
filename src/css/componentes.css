@@ -8,7 +8,7 @@
     display: grid;
     grid-template-rows: 49px;
     grid-template-columns: [start] 1fr [linea2] 375px [linea3] 1fr [end];
-    bottom: 0;
+    bottom: 0px;
     left: 0;
     background-color: var(--blue-color);
     z-index: 10;
@@ -72,15 +72,15 @@ path.carrusel {
 .navbar_app {
     display: flex;
     justify-content: space-between;
-    margin: 11.5px 0px 0px 0px;
-    align-items: center;
+    padding: 0px;
     width: 97%;
     align-items: flex-start;
     padding-top: 5%;
 }
 
-.navbar_app h1 {
-    padding-top: 12%;
+.navbar_app h1,
+.header h1 {
+    color: var(--white-color);
 }
 
 .navbar {
@@ -90,4 +90,12 @@ path.carrusel {
 
 .container {
     padding-bottom: 70px;
+    height: auto;
+}
+
+.header{
+    background-image: url(../img/img_header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: var(--space2);
 }

@@ -2,7 +2,7 @@
 .navbar_config {
     display: flex;
     justify-content: space-between;
-    margin: var(--space3) var(--space2);
+    margin: 32px 16px 16px 0px;
     align-items: center;
 }
 
@@ -13,7 +13,7 @@
 
 .navbar_atras p {
     font-size: var(--accion);
-    color: var(--blue2-color);
+    color: var(--white-color);
     padding: 1.5px 0px 1.5px 8px;
     margin: 0;
 }
@@ -23,7 +23,8 @@
     padding-right: var(--space2);
     display: grid;
     grid-template-columns: [start]1fr[linea2] 1fr[linea3] 1fr[end];
-    grid-template-rows: [start].6fr[linea2] .7fr[linea3].4fr[linea4] 1fr[end];
+    grid-template-rows: [start]45%[linea2] .2fr[linea3] .2fr[end];
+    height: 100vh;
 }
 
 .seccion_config h1 {
@@ -40,11 +41,12 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .ilustra_config {
-    grid-row: linea3/linea4;
+    grid-row: linea2/linea3;
     grid-column: start/end;
     height: 97.47px;
-    background: url("../img/img_confing.png");
+    background: url(../img/img_confing.png);
     border-radius: var(--space);
     background-size: contain;
     background-repeat: no-repeat;
@@ -59,7 +61,7 @@
     justify-content: center;
     margin-top: 30px;
     grid-column: start / end;
-    grid-row: linea4 / end;
+    grid-row: linea3 / end;
 }
 
 .item_config {
@@ -101,13 +103,14 @@
     flex-wrap: wrap;
 }
 
-.item_logout{
+.item_logout {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
+
 #show-modal_config_logout:hover {
     cursor: pointer;
     background: var(--gray-color);
@@ -274,10 +277,12 @@ path.user {
 
 .datos_user {
     margin-top: var(--space2);
-    grid-column: linea2 / linea3;
-    grid-row: linea2 / linea3;
+    grid-column: start / end;
+    grid-row: start / linea2;
     display: grid;
-    grid-template-rows: [start]1fr [linea2] 1fr [end];
+    grid-template-rows: [start]1fr[linea2] 1fr [linea3] 1fr [end];
+    justify-items: center;
+    align-items: center;
 }
 
 .text {
@@ -301,9 +306,6 @@ path.user {
 }
 
 .content_svg {
-    grid-column: linea2 / linea3;
-    grid-row: start / linea2;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -338,8 +340,9 @@ path.user {
 
 .datos_dos {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
     position: relative;
+    width: 92%;
     top: -15px;
 }

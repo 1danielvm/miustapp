@@ -1,6 +1,6 @@
 /* ---------------------- NOTICIAS--------------- */
 .seccion_noticias {
-    margin: 0px 16px;
+    margin: var(--space2);
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -156,10 +156,21 @@
     background: #C53050;
     font-size: var(--normal);
     display: flex;
-    padding: var(--space2);
+    padding: 16px 0px 16px 16px;
     color: var(--white-color);
     height: 60px;
     border-radius: var(--space);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    display: flex;
+    align-self: center;
+}
+
+.btn img{
+    width: 50px;
 }
 
 .boton.dos {
