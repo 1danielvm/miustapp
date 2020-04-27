@@ -167,21 +167,14 @@
   }
 
   /*------------------- NOTICIAS -------------------*/
-  .seccion_noticias {
-    margin: var(--space2) var(--space4);
-    display: grid;
-    grid-template-columns: [start]1fr[linea2] 1fr[end];
-    gap: var(--space2) var(--space3);
-  }
-
+  .seccion_noticias,
   .seccion_estudiantes,
   .seccion_directorio,
   .seccion_mapa,
   .seccion_horario {
-    margin: 0px var(--space4);
+    margin: var(--space2) var(--space4);
     display: grid;
     grid-template-columns: [start]1fr[linea2] 1fr[end];
-    grid-template-rows: [start]70px[linea2] 1fr[end];
     gap: var(--space2) var(--space3);
   }
 
