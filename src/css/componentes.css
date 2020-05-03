@@ -87,6 +87,12 @@ path.carrusel {
     display: flex;
     justify-content: flex-end;
 }
+.navbar_config2 {
+    display: flex;
+    justify-content: flex-end;
+    margin: 32px 16px 16px 0px;
+    align-items: center;
+}
 
 .container {
     padding-bottom: 70px;
@@ -98,4 +104,11 @@ path.carrusel {
     background-size: cover;
     background-repeat: no-repeat;
     padding: var(--space2);
+}
+
+p.verde{
+    color: var(--green-color);
+}
+p.rojo{
+    color: var(--red-color);
 }

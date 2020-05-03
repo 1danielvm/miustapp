@@ -1,6 +1,6 @@
 /* ---------------------- HORARIO--------------- */
 .seccion_horario {
-    margin: 0px 16px;
+    margin: 0px 32px;
     display: grid;
     grid-template-columns: 1fr;
 }

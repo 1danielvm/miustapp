@@ -24,6 +24,7 @@
   --black-color: #000000;
   --red-color: #FD3B2F;
   --yellow-color: #FDBB26;
+  --green-color: #34B591;
   /* -------- espaciado------ */
   --space: 8px;
   --space2: 16px;
@@ -165,6 +166,13 @@
     grid-row: 1;
     justify-self: center;
   }
+  .seccion_invitado {
+    margin: var(--space2) var(--space4);
+    display: grid;
+    grid-template-columns: [start]1fr[linea2] 1fr[end];
+    grid-template-rows: 1fr;
+    padding: 0;
+  }
 
   /*------------------- NOTICIAS -------------------*/
   .seccion_noticias,
@@ -180,15 +188,14 @@
 
   .header {
     grid-column: start/end;
-    padding: 32px 64px 8px 64px;
+    padding: 8px 64px;
   }
 
-  .navbar_app {
+  .navbar_config2 {
     display: flex;
-    justify-content: space-between;
-    width: 97%;
+    justify-content: flex-end;
+    margin: 16px 64px 16px 0px;
     align-items: center;
-    padding-top: 0%;
   }
 
   .navbar_app h1 {
@@ -303,13 +310,22 @@
     gap: var(--space) var(--space3);
   }
 
-  .datos_notas_info {
-    grid-column: start/end;
-    display: grid;
-    grid-template-columns: [start]1fr[linea2] 1fr[end];
-    gap: var(--space4);
-    align-items: flex-start;
-  }
+ .datos_notas_info {
+   grid-column: start/end;
+   display: grid;
+   grid-template-columns: [start]1fr[linea2] 1fr[end];
+   gap: var(--space4);
+   align-items: flex-start;
+ }
+ .content2 {
+   grid-column: linea2/end;
+   align-content: space-evenly;
+   display: grid;
+   grid-template-columns: [start].8fr[linea2]1fr[end];
+   grid-template-rows: 40px;
+   align-items: flex-start;
+   margin: 32px 0px;
+ }
 
   .datos_notas_info .content4 .content1 {
     text-align: end;
@@ -322,8 +338,49 @@
   }
 
   .info_grafica img {
-    width: 40%;
+    width: 74%;
   }
+  .titular_card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: start/linea2;
+    width: 92%;
+  }
+  .titular_card .item_info {
+    display: grid;
+    grid-template-columns: [start]1fr [linea2]4fr[end];
+    align-items: flex-end;
+    margin-bottom: 20px;
+    grid-template-rows: 1fr;
+    text-align: end;
+  }
+  .info_grafica {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: var(--space3) 0px;
+    grid-column: linea2/end;
+  }
+  .titular_card .item_info h2 {
+    font-size: var(--titulo);
+    font-weight: 400;
+    padding: 0 var(--space2);
+    margin: 0;
+    justify-self: center;
+  }
+  .titular_card .item_info p {
+    font-size: var(--pequeno);
+    margin: 0;
+    color: var(--gray-color);
+    font-weight: 500;
+    grid-column: linea2/end;
+    display: flex;
+    justify-content: center;
+    text-align: -webkit-center;
+    width: 68%;
+    margin-left: 21px;
+  }
+  
 
   /* ------------------------- HORARIO ----------------------------- */
   .content_carrusel {
@@ -337,6 +394,20 @@
 
   .container_carrusel .item {
     margin: var(--space);
+    width: 47%;
+    height: 150px;
+  }
+
+  .item .left2{
+    height: 150px;
+  }
+  .item .right2{
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+  }
+  .item .right{
+    height: 150px;
   }
 
   .hs {

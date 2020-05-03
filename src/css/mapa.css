@@ -24,8 +24,8 @@
 }
 
 .accion_mapa form {
-    width: 155px;
-    justify-content: flex-end;
+    width: 190px;
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
 }

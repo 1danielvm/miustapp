@@ -24,18 +24,19 @@
 }
 
 .accion_registro input {
-    background: var(--white2-color);
+    background: var(--white-color);
     height: 27px;
     width: 228px;
     margin: var(--space) var(--space2);
-    border: none;
+    border: solid 1px var(--gray3-color);
     border-radius: var(--space);
     color: var(--gray3-color);
-    text-align: center;
-    font-size: var(--medio);
+    text-align: start;
+    font-size: var(--normal);
     font-weight: 300;
     display: flex;
     flex-wrap: wrap;
+    padding-left: var(--space);
 }
 
 .accion_registro .boton-dos {

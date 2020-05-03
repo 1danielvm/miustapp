@@ -24,7 +24,7 @@
     display: grid;
     grid-template-columns: [start]1fr[linea2] 1fr[linea3] 1fr[end];
     grid-template-rows: [start]45%[linea2] .2fr[linea3] .2fr[end];
-    height: 100vh;
+    height: 100%;
 }
 
 .seccion_config h1 {

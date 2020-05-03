@@ -4,6 +4,12 @@
     display: grid;
     grid-template-columns: 1fr;
 }
+h3.sub_notas{
+    font-weight: 400;
+}
+h3.sub_notas span{
+    font-weight: 700;
+}
 
 .datos_notas h2 {
     font-size: var(--titulo);
@@ -159,11 +165,20 @@ h2.titulo_notas {
     color: var(--gray-color);
 }
 
+h1.titel_short{
+    margin-top: 11%;
+}
+
+
 .titular_card .item_info p {
     font-size: var(--pequeno);
     margin: 0;
     color: var(--gray-color);
     font-weight: 500;
+    grid-column: linea2/end;
+    display: flex;
+    justify-content: center;
+    width: 63%;
 }
 
 .punto_azul {
@@ -180,4 +195,32 @@ h2.titulo_notas {
     background: var(--yellow-color);
     border-radius: 50%;
     margin: var(--space);
+}
+
+/* --------NOTAS INVITADO---------------- */
+.seccion_invitado {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 25%;
+    text-align: center;
+    justify-items: center;
+}
+
+.seccion_invitado .content1 img{
+    width: 100%;
+}
+
+.seccion_invitado .content5 {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-top: 20%;
+}
+
+.seccion_invitado .content5 p{
+ font-size: 18px;
+ color: var(--gray2-dark-color);
 }

@@ -17,6 +17,12 @@
     margin-bottom: 0;
     font-size: var(--medio);
 }
+.boton-uno.ingresar p{
+    color: var(--white-color);
+    font-weight: 300;
+    line-height: 21px;
+    font-size: var(--medio);
+}
 
 .boton-dos {
     background-color: var(--blue-color);
@@ -52,6 +58,19 @@
     font-weight: 400;
 }
 
-.btn{
-   
+.btn5{
+    background-color: var(--blue-color);
+    height: 24px;
+    width: 77px;
+    border-radius: var(--space);
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn5 h4{
+    margin: 0;
+    padding: 0;
+    font-size: var(--medio);
+    font-weight: 300;
 }
