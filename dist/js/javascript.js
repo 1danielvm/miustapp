@@ -3,15 +3,15 @@
 
  function firstFunction() {
    firstVar = setTimeout(showLoader, 2000);
-   secondVar = setTimeout(showPage, 4000);
+   secondVar = setTimeout(showPage, 5000);
  }
 
  function showLoader() {
    document.getElementById("start").style.display = "none";
-   document.getElementById("loader").style.display = "block";
+   document.getElementById("loader").style.display = "flex";
  }
 
- function showPage() {
+  function showPage() {
    document.getElementById("loader").style.display = "none";
    document.getElementById("onboarding").style.display = "block";
  }

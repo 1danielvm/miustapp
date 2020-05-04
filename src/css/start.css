@@ -10,7 +10,12 @@
     align-content: center;
     justify-content: center;
 }
-
+.content_loader {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
 .logo_loader {
     width: 146px;
     background-image: url(../img/logo_contipo.png);
@@ -18,39 +23,34 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-#loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    width: 150px;
-    height: 150px;
-    margin: -75px 0 0 -75px;
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #3498db;
-    width: 120px;
-    height: 120px;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
+.loader {
+    width: 240px;
+    height: 240px;
+    background-image: url(../img/img_loader.png);
+    background-size: 4319.5px 240px;
+    animation-name: loader;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-timing-function: steps(17);
+    animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes spin {
+@-webkit-keyframes loader {
     0% {
-        -webkit-transform: rotate(0deg);
+        background-position: 0 0;
     }
 
     100% {
-        -webkit-transform: rotate(360deg);
+        background-position: right;
     }
 }
 
-@keyframes spin {
+@keyframes loader {
     0% {
-        transform: rotate(0deg);
+        background-position: 0 0;
     }
 
     100% {
-        transform: rotate(360deg);
+        background-position: right;
     }
 }

@@ -16,48 +16,50 @@
 <body onload="firstFunction()">
 
   <div class="animsition container fondo1" data-animsition-in-class="fade-in" data-animsition-in-duration="800"
-    data-animsition-out-class="fade-out-down" data-animsition-out-duration="600" id="start">
+    data-animsition-out-class="fade-out-down" data-animsition-out-duration="800" id="start">
     <div class="start">
       <article class="logo_loader"></article>
     </div>
   </div>
+  <div style="display:none;"  class="content_loader" id="loader">
+    <div class="loader" ></div>
+  </div>
 
-  <div style="display:none;" id="loader"></div>
-
-   <div class="animsition Onboarding" data-animsition-in-class="fade-in" data-animsition-in-duration="800"
-     data-animsition-out-class="fade-out-down" data-animsition-out-duration="600" style="display:none;" id="onboarding">
-     <div class="card_onboarding">
-       <article>
-         <img src="./dist/img/onboarding1.png" alt="imagen onboarding">
-       </article>
-       <div class="info-onboarding">
-         <div class="animsition" data-animsition-in-class="fade-in-right-sm" data-animsition-in-duration="1000"
-           data-animsition-out-class="fade-out-right-sm" data-animsition-out-duration="800">
-           <h2>Noticias</h2>
-           <p>Mantente siempre al tanto de todo lo que pasa en la U</p>
-           <ul>
-             <li class="activo"></li>
-             <li></li>
-             <li></li>
-             <li></li>
-             <li></li>
-           </ul>
-         </div>
-         <div class="animsition" data-animsition-in-class="fade-in-left-sm" data-animsition-in-duration="1000"
-           data-animsition-out-class="fade-out-left-sm" data-animsition-out-duration="800">
-           <a href="./onboarding2.html">
-             <div class="boton-cuatro">
-               <p>Siguiente</p>
-             </div>
-           </a>
-         </div>
-       </div>
-     </div>
+  <div class="animsition Onboarding" data-animsition-in-class="fade-in" data-animsition-in-duration="800"
+    data-animsition-out-class="fade-out-down" data-animsition-out-duration="600" style="display:none;" id="onboarding">
+    <div class="card_onboarding">
+      <article>
+        <img src="./dist/img/onboarding1.png" alt="imagen onboarding">
+      </article>
+      <div class="info-onboarding">
+        <div class="animsition" data-animsition-in-class="fade-in-right-sm" data-animsition-in-duration="1000"
+          data-animsition-out-class="fade-out-right-sm" data-animsition-out-duration="800">
+          <h2>Noticias</h2>
+          <p>Mantente siempre al tanto de todo lo que pasa en la U</p>
+          <ul>
+            <li class="activo"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+          <div class="animsition" data-animsition-in-class="fade-in-left-sm" data-animsition-in-duration="1000"
+            data-animsition-out-class="fade-out-left-sm" data-animsition-out-duration="800">
+            <a href="./onboarding2.html">
+              <div class="boton-cuatro">
+                <p>Siguiente</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="./dist/js/animsition.min.js"></script>
-    <script src="./dist/js/javascript.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="./dist/js/animsition.min.js"></script>
+  <script src="./dist/js/javascript.js" charset="utf-8"></script>
 </body>
 
 </html>
