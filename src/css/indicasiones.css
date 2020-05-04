@@ -1,6 +1,9 @@
 /* ---------------------- INDICACIONES--------------- */
 .indicaciones_text {
     margin-top: var(--space3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .indicaciones_text ul {
