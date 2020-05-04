@@ -1,6 +1,4 @@
-*.png
-*.svg
-*.jpg
+
 *.DS_Store
 *node_modules/
 *.json
