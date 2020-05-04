@@ -3,7 +3,11 @@
     margin-top: var(--space3);
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-right: 10%;
+}
+.indicaciones_text h2{
+    width: 100%;
 }
 
 .indicaciones_text ul {
