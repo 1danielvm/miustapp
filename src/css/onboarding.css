@@ -6,12 +6,14 @@
 }
 
 .card_onboarding img {
-    height: 75vh;
+    height: 69vh;
 }
 
 .card_onboarding article {
     grid-column: line2 / line3;
     grid-row: start/ linea2;
+    display: flex;
+    justify-content: center;
 }
 
 .info-onboarding {
