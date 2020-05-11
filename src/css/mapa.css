@@ -38,10 +38,14 @@
     border: none;
     border-radius: var(--space);
     padding-left: var(--space2);
-    color: var(--gray3-color);
+    color: var(--gray2-dark-color);
     font-size: var(--normal);
     font-weight: 400;
     border: solid 1px var(--gray3-color);
+}
+
+.accion_mapa input:focus{
+    color: var(--black-color);
 }
 
 .accion_mapa p {

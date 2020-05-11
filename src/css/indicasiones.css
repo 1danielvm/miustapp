@@ -4,7 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    padding-right: 10%;
+    padding-right: 10px;
 }
 .indicaciones_text h2{
     width: 100%;
@@ -18,9 +18,10 @@
 .indicaciones_text ul li::before {
     content: "\2022";
     font-weight: 900;
-    color: var(--yellow-color);
+    color: var(--gray2-dark-color);
     display: inline-block;
     width: var(--space2);
+    margin-right: 6px;
 }
 
 .indicaciones_text li {
@@ -28,4 +29,9 @@
     font-weight: 300;
     color: var(--gray2-dark-color);
     line-height: 23px;
+    display: flex;
+}
+
+.indicaciones_text strong{
+    margin-right: 4px;
 }

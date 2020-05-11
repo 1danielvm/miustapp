@@ -25,12 +25,12 @@
 
 .accion_registro input {
     background: var(--white-color);
-    height: 27px;
+    height: 30px;
     width: 228px;
-    margin: var(--space) var(--space2);
+    margin: var(--space) 0px;
     border: solid 1px var(--gray3-color);
     border-radius: var(--space);
-    color: var(--gray3-color);
+    color: var(--gray-dark-color);
     text-align: start;
     font-size: var(--normal);
     font-weight: 300;
@@ -38,6 +38,17 @@
     flex-wrap: wrap;
     padding-left: var(--space);
 }
+
+.accion_registro p{
+    margin-bottom: 4px;
+    margin-top: 14px;
+    color: var(--gray2-dark-color);
+}
+
+.accion_registro input:focus{
+    color: var(--black-color);
+}
+
 
 .accion_registro .boton-dos {
     background-color: var(--blue-color);
