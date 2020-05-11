@@ -1,7 +1,6 @@
 /* ---------------------- START --------------- */
 .fondo1 {
-        background: -webkit-linear-gradient(top, #fcfcfc 0%, #f8f8f8 64%, rgba(52, 80, 125, 1) 130%);
-        background: -moz-linear-gradient(top, #fcfcfc 0%, #f8f8f8 64%, rgba(52, 80, 125, 1) 130%);
+        background: var(--white2-color);
 }
 
 .start {
