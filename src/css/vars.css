@@ -1051,9 +1051,6 @@
   }
 }
 
-
-
-
 /* --------------------------- DESKTOP, iPAD PRO, TV-------- */
 @media only screen and (min-width: 1024px) {
 
@@ -1586,6 +1583,12 @@
   .buscar_directorio {
     grid-column: start/end;
     margin-bottom: 20px;
+  }
+
+  .datos_directorio .text {
+    margin-bottom: var(--space3);
+    margin-top: 0;
+    margin-left: var(--space);
   }
 
   /* -------------------INVITADO ------------------------ */
