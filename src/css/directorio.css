@@ -9,6 +9,7 @@
     position: sticky !important;
     top: 0;
     background: var(--white-color);
+    z-index: 20;
 }
 
 .buscar_directorio input {
@@ -64,6 +65,7 @@
     display: none;
     z-index: 100;
     position: absolute;
+    max-height: 60vh;
 }
 
 .search-table {
