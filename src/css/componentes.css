@@ -141,3 +141,7 @@ p.rojo{
         -webkit-transform: rotate(1080deg);
     }
 }
+
+h1.noticia {
+    margin-left: 16px;
+}

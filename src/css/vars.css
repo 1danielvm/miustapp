@@ -130,6 +130,7 @@
     grid-template-columns: [start]1fr[linea2] 1fr[end];
     grid-template-rows: 1fr;
     padding: 0;
+    
   }
 
   .tendencias {

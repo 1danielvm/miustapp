@@ -205,9 +205,16 @@ h1.titel_short{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    padding-top: 25%;
     text-align: center;
     justify-items: center;
+     border-radius: 16px 16px 0px 0px;
+     margin-top: -20px;
+     background-color: var(--white-color);
+     padding: 16px;
+}
+
+.seccion_invitado h1{
+    justify-self: start;
 }
 
 .seccion_invitado .content1 img{
