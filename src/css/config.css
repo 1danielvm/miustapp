@@ -4,6 +4,7 @@
     justify-content: space-between;
     margin: 32px 16px 16px 0px;
     align-items: center;
+    
 }
 
 .navbar_atras {
@@ -19,14 +20,20 @@
 }
 
 .seccion_config {
-    padding-left: var(--space2);
-    padding-right: var(--space2);
     display: grid;
     grid-template-columns: [start]1fr[linea2] 1fr[linea3] 1fr[end];
-    grid-template-rows: [start]45%[linea2] .2fr[linea3] .2fr[end];
+    grid-template-rows: [start] 2%[linea2]45%[linea3] .2fr[linea4] .2fr[end];
     height: 100%;
+    border-radius: 16px 16px 0px 0px;
+    padding: 16px 16px 0px;
+    margin-top: -20px;
+    background-color: var(--white-color);
 }
 
+.seccion_config h1.config{
+    grid-column: start / end;
+    grid-row: start / linea2;
+}
 .seccion_config h1 {
     font-size: var(--seccion);
     color: var(--gray2-dark-color);
@@ -34,21 +41,21 @@
     width: 100%;
 }
 
-.seccion_config .header {
+.seccion_config .datos_user {
     grid-column: start / end;
-    grid-row: start / linea2;
+    grid-row: linea2 / linea3;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .ilustra_config {
-    grid-row: linea2/linea3;
+    grid-row: linea3 / linea4;
     grid-column: start/end;
     height: 97.47px;
-    background: url(../img/img_confing.png);
+    background: url(../img/img_config.png);
     border-radius: var(--space);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -61,7 +68,7 @@
     justify-content: center;
     margin-top: 30px;
     grid-column: start / end;
-    grid-row: linea3 / end;
+    grid-row: linea4 / end;
 }
 
 .item_config {

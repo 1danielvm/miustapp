@@ -10,7 +10,7 @@
     grid-template-columns: [start] 1fr [linea2] 375px [linea3] 1fr [end];
     bottom: 0px;
     left: 0;
-    background-color: var(--blue-color);
+    background-color: var(--white-color);
     z-index: 1000;
     animation: none;
     transition: none;
@@ -38,11 +38,11 @@
 .menu_icono p {
     font-size: var(--menu);
     text-align: inherit;
-    color: var(--blue2-color);
+    color: var(--gray-color);
 }
 
 .menu_icono.activo p {
-    color: var(--white-color);
+    color: var(--blue2-color);
 }
 
 .menu_icono.disable p {
@@ -50,15 +50,15 @@
 }
 
 path.inactivo {
-    fill: var(--blue2-color);
+    fill: var(--gray-color);
 }
 
 path.activo {
-    fill: var(--white-color);
+    fill: var(--blue2-color);
 }
 
 path.disable {
-    fill: var(--blue3-color);
+    fill: var(--blue-color);
 }
 
 path.button {
@@ -104,6 +104,7 @@ path.carrusel {
     background-size: cover;
     background-repeat: no-repeat;
     padding: var(--space2);
+    height: 150px;
 }
 
 p.verde{

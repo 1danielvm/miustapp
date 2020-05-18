@@ -1,8 +1,11 @@
 /* ---------------------- HORARIO--------------- */
 .seccion_horario {
-    margin: 0px 32px;
     display: grid;
     grid-template-columns: 1fr;
+    border-radius: 16px 16px 0px 0px;
+    padding: 16px 32px 0px;
+    margin-top: -20px;
+    background-color: var(--white-color);
 }
 
 .content_carrusel {

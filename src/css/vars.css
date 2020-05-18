@@ -795,7 +795,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-column: start/linea2;
-    width: 92%;
+    width: 100%;
     height: 101%;
   }
 
@@ -902,13 +902,15 @@
     display: grid;
     grid-template-columns: [start]1fr[linea2] 1fr[end];
     gap: var(--space2) var(--space3);
-    grid-template-rows: [start] 1fr [linea2] 1fr[linea3] 1fr[end];
+    grid-template-rows: [start] 2% [linea2] 1fr [linea3] 1fr[linea4] 1fr[end];
     height: fit-content;
   }
-
+  .seccion_config h1.config{
+    grid-row: start / linea2;
+  }
   .datos_user {
     margin: 23px 0px;
-    grid-row: start / linea2;
+    grid-row: linea2 / linea3;
     display: grid;
     grid-template-rows: [start]1fr [linea2] 1fr [end];
     grid-template-columns: [start]1fr[linea2] 1fr[end];
@@ -930,10 +932,10 @@
   }
 
   .ilustra_config {
-    grid-row: linea3/end;
+    grid-row: linea4/end;
     grid-column: start/end;
     height: auto;
-    background: url(../img/img_confing.png);
+    background: url(../img/img_config.png);
     border-radius: var(--space);
     background-size: contain;
     background-repeat: no-repeat;
@@ -949,7 +951,7 @@
     justify-content: center;
     margin-top: var(--space);
     grid-column: start / end;
-    grid-row: linea2/linea3;
+    grid-row: linea3/linea4;
   }
 
   .modal_config_logout .content-modal_config_logout {
