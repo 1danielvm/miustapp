@@ -1052,7 +1052,7 @@
 }
 
 /* --------------------------- DESKTOP, iPAD PRO, TV-------- */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
 
   /*------------------- ONBOARDING --------------------*/
   .onboarding {
@@ -1256,6 +1256,7 @@
 
   footer li {
     margin: 0 8px;
+    text-align: center;
   }
 
   footer a{
@@ -1589,6 +1590,11 @@
     margin-bottom: var(--space3);
     margin-top: 0;
     margin-left: var(--space);
+  }
+  .buscar_directorio {
+    top: 80px;
+    z-index: 20;
+    position: sticky !important;
   }
 
   /* -------------------INVITADO ------------------------ */
