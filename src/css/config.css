@@ -17,6 +17,7 @@
     color: var(--white-color);
     padding: 1.5px 0px 1.5px 8px;
     margin: 0;
+    font-weight: 500;
 }
 
 .seccion_config {
@@ -341,7 +342,6 @@ path.user {
     color: var(--gray-color);
     font-weight: 300;
     position: relative;
-    top: -3px;
     padding-bottom: 0px;
 }
 
@@ -351,5 +351,4 @@ path.user {
     text-align: center;
     position: relative;
     width: 92%;
-    top: -15px;
 }

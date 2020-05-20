@@ -10,7 +10,7 @@
 
 .buscar_directorio{
     position: sticky !important;
-    top: 0;
+    top: 150px;
     background: var(--white-color);
     z-index: 20;
 }
@@ -29,10 +29,17 @@
     margin-top: var(--space2);
 }
 
+.buscar_directorio input:checked {
+    position: sticky !important;
+}
+
 .buscar_directorio input:focus{
     color: var(--gray2-dark-color);
 }
 
+.datos_directorio{
+    height: 100%;
+}
 .datos_directorio .text {
     margin-bottom: var(--space3);
     margin-top: 0;

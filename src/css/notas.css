@@ -210,7 +210,7 @@ h1.titel_short{
      border-radius: 16px 16px 0px 0px;
      margin-top: -20px;
      background-color: var(--white-color);
-     padding: 16px;
+     padding: 16px 0;
 }
 
 .seccion_invitado h1{
