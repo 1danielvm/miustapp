@@ -70,6 +70,72 @@
 ---------------------------- INICIO MEDIA QUERYS------------
 -----------------------------------------------------------*/
 
+.top-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 2rem;
+  height: 4rem;
+  z-index: -1;
+}
+
+.top-button {
+  width: 0rem;
+  height: 0rem;
+  background: var(--blue2-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .2s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+svg.top_svg {
+  position: absolute;
+  transform: rotate(90deg) !important;
+  top: 22%;
+  left: 35%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: .2s;
+}
+
+.show {
+  z-index: 100;
+}
+
+.show .top-button {
+  animation: popup .3s ease-in-out;
+  width: 40px;
+  height: 40px;
+  z-index: 110;
+}
+
+.show .top_svg {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup {
+  0% {
+    width: 0rem;
+    height: 0rem;
+  }
+
+  50% {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  100% {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+/* -----------------------------------------------------------
+---------------------------- INICIO MEDIA QUERYS------------
+-----------------------------------------------------------*/
+
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -180,7 +246,8 @@
   .header {
     grid-column: start/end;
     padding: 8px 64px;
-    background-position-y: -178px;
+    height: 171px;
+    background-position-y: -113px;
   }
 
   .navbar_config2 {
@@ -264,6 +331,17 @@
 
   .buscar_directorio {
     grid-column: start/end;
+  }
+
+  .buscar_directorio {
+    position: sticky !important;
+    top: 170px;
+    background: var(--white-color);
+    z-index: 20;
+  }
+
+  .datos_directorio .content5 {
+    padding-left: 20px;
   }
 
   /* ------------------- MAPA --------------------- */
@@ -517,7 +595,6 @@
   }
 }
 
-
 /* --------------------------- DISPOSITIVOS LANDSCAPE-------- */
 @media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
 
@@ -638,7 +715,8 @@
   .header {
     grid-column: start/end;
     padding: 8px 64px;
-    background-position-y: -88px;
+    height: 108px;
+    background-position-y: -92px;
     position: relative;
   }
 
@@ -971,8 +1049,7 @@
   .seccion_noticias,
   .seccion_estudiantes,
   .seccion_directorio,
-  .seccion_mapa,
-  .seccion_horario {
+  .seccion_mapa {
     margin: var(--space2) var(--space4);
     display: grid;
     grid-template-columns: [start]1fr[linea2] 1fr[end];
@@ -991,7 +1068,8 @@
   }
 
   .btn img {
-    width: 72px;
+    width: 58px;
+    height: 58px;
   }
 
   .menu_navegar {
@@ -999,6 +1077,50 @@
     width: -webkit-fill-available;
   }
 
+  /* --------- DIRECTORIO ---------------- */
+  .top-container {
+    position: fixed;
+    bottom: 32px;
+    bottom: 2rem;
+    right: 32px;
+    right: 6rem;
+    width: 32px;
+    width: 2rem;
+    height: 64px;
+    height: 4rem;
+    z-index: -1;
+  }
+
+  .show {
+    z-index: 100;
+  }
+
+  .show .top-button {
+    -webkit-animation: popup .3s ease-in-out;
+    animation: popup .3s ease-in-out;
+    width: 50px;
+    height: 50px;
+    z-index: 110;
+  }
+
+  svg.top_svg {
+    position: absolute;
+    -webkit-transform: rotate(90deg) !important;
+    transform: rotate(90deg) !important;
+    top: 25%;
+    left: 37%;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+
+  .buscar_directorio {
+    position: sticky !important;
+    top: 170px;
+    background: var(--white-color);
+    z-index: 20;
+  }
   /* --------- MAPA ---------------- */
   .datos_mapa,
   .datos_indicaciones {
@@ -1013,11 +1135,26 @@
     display: block;
     grid-column: start/linea2;
     align-content: center;
-    text-align: center;
   }
 
   .mapa_fondo img {
     width: 79%;
+  }
+  .indicaciones_text {
+    margin-top: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: space-between;
+    padding-right: 10px;
+  }
+
+  .indicaciones_text a {
+    margin-left: 58%;
   }
 
   /* -------- NOTAS ------------- */
@@ -1046,7 +1183,6 @@
   .header {
     grid-column: start/end;
     padding: 8px 64px;
-    background-position-y: -90px;
   }
 
   .seccion_invitado {
@@ -1056,6 +1192,13 @@
     justify-items: center;
     width: 100%;
     text-align: -webkit-center;
+  }
+
+  .seccion_horario {
+    margin: 20% var(--space4);
+    display: grid;
+    grid-template-columns: [start]1fr[linea2] 1fr[end];
+    gap: var(--space2) var(--space3);
   }
 }
 
@@ -1199,18 +1342,9 @@
   .navbar_config2{
     display: none;
   }
-   .header {
-     padding: 6% 64px var(--space2);
-     background: var(--white-color);
-     margin: 0% 22%;
-     /* box-shadow: 10px 0px 20px 3px rgba(0, 0, 0, 0.1); */
-   }
-
-   .header h1 {
-     color: var(--black-color);
-   }
-
-
+  .header {
+    display: none;
+  }
   /* ------------------- FOOTER ---------------------- */
 
   #show-modal_config_logout {
@@ -1333,13 +1467,14 @@
   .seccion_config {
     display: grid;
     background: var(--white-color);
-    padding: 0% 64px 0%;
+    padding: 32px 64px 0%;
     height: 85vh;
     margin: 0% 22%;
     /* box-shadow: 0px 20px 20px 3px rgba(0, 0, 0, 0.1); */
     grid-template-columns: [start]1fr[linea2] 1fr[end];
     gap: var(--space2) var(--space3);
     align-content: flex-start;
+    margin-top: 85px;
   }
 
  
@@ -1386,13 +1521,14 @@
   .seccion_mapa {
     display: grid;
     background: var(--white-color);
-    padding: 0% 64px 0%;
+    padding: 32px 64px 0%;
     height: 85vh;
     margin: 0% 22%;
     box-shadow: 0px 20px 20px 3px rgba(0, 0, 0, 0.1);
     grid-template-columns: [start]1fr[linea2] 1fr[end];
     gap: var(--space2) var(--space3);
     align-content: center;
+    margin-top: 85px;
   }
   .datos_mapa,
   .datos_indicaciones {
@@ -1478,12 +1614,13 @@
 
   /* ------------------- NOTAS --------------------- */
   .seccion_notas {
-    margin: 0px 22%;
+    margin: 32px 22% 0px;
     display: grid;
     grid-template-columns: [start]1fr[linea2] 1fr[end];
     grid-template-rows: [start]1fr[linea2] 1fr[end];
     gap: var(--space) var(--space3);
     height: 130vh;
+    margin-top: 85px;
   }
 
   .datos_notas_info {
@@ -1566,7 +1703,8 @@
   }
 
   .btn img {
-    width: 65px;
+    width: 3rem;
+    height: 3rem;
   }
   .img_noticia-dos img {
     height: 320px;
@@ -1580,13 +1718,14 @@
   .seccion_directorio {
     display: grid;
     background: var(--white-color);
-    padding: 0% 64px 0%;
+    padding: 32px 64px 0%;
     height: max-content;
     margin: 0% 22%;
     box-shadow: 0px 20px 20px 3px rgba(0, 0, 0, 0.1);
     grid-template-columns: [start]1fr[linea2] 1fr[end];
     gap: var(--space2) var(--space3);
     align-content: center;
+    margin-top: 85px;
   }
 
   .buscar_directorio {
@@ -1609,18 +1748,19 @@
   .seccion_invitado{
     display: grid;
     background: var(--white-color);
-    padding: 0% 64px 0%;
+    padding: 32px 64px 0%;
     height: 76vh;
     margin: 0% 22%;
     grid-template-columns: [start]1fr[linea2] 1fr[end];
     gap: var(--space2) var(--space3);
     align-content: center;
     grid-template-rows: 1fr;
+    margin-top: 85px;
   }
 
   .seccion_invitado .content1{
     display: block;
-    grid-column: start/linea2;
+    grid-column: start/end;
     align-content: center;
     align-self: center;
   }
@@ -1631,5 +1771,7 @@
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
+    grid-column: start/end;
+    margin-bottom: 5%;
   }
 }
