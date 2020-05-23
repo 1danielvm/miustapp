@@ -2,9 +2,12 @@
 .navbar_config {
     display: flex;
     justify-content: space-between;
-    margin: 32px 16px 16px 0px;
+    margin: 25px 16px 16px 0px;
     align-items: center;
-    
+}
+
+.navbar_icono{
+    display: flex;
 }
 
 .navbar_atras {
