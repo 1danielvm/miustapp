@@ -295,6 +295,26 @@ svg.top_svg {
     width: -webkit-fill-available;
   }
 
+  .seccion_config .datos_user {
+    grid-column: start / end;
+    grid-row: start / linea2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 64px;
+  }
+
+  .ilustra_config {
+    grid-row: linea3 / end;
+    grid-column: start/end;
+    height: 200px;
+    background: url('../img/img_config.png');
+    border-radius: var(--space);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   /*----------------- NOTICIA TIPO 2 ------------- */
   .tend_noticia_tipe1 {
     grid-auto-columns: start/end;
@@ -1075,6 +1095,25 @@ svg.top_svg {
   .menu_navegar {
     grid-template-columns: 1fr 1fr;
     width: -webkit-fill-available;
+  }
+
+  .seccion_config .datos_user {
+    grid-column: start / end;
+    grid-row: start / linea2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 64px;
+  }
+  .ilustra_config {
+    grid-row: linea3 / end;
+    grid-column: start/end;
+    height: 200px;
+    background: url('../img/img_config.png');
+    border-radius: var(--space);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   /* --------- DIRECTORIO ---------------- */

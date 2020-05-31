@@ -29,6 +29,11 @@ p.descripcion {
     color: var(--gray2-dark-color);
 }
 
+img.descripcion {
+    max-width: 100%;
+    border-radius: var(--space);
+}
+
 .noticia-dos {
     overflow-x: scroll;
     margin-bottom: var(--space3);
@@ -47,4 +52,5 @@ p.descripcion {
     height: 209px;
     width: 152px;
     object-fit: cover;
+    border-radius: var(--space);
 }

@@ -50,7 +50,8 @@
     grid-row: linea2 / linea3;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .ilustra_config {
@@ -282,6 +283,11 @@
     width: 105px;
 }
 
+img.perfil{
+    height: 100%;
+    border-radius: 50%;
+}
+
 path.user {
     fill: var(--white2-color);
 }
@@ -331,6 +337,7 @@ path.user {
 
 .datos_uno {
     text-align: center;
+    margin: var(--space2) 0;
 }
 
 .datos_uno p {
@@ -354,4 +361,5 @@ path.user {
     text-align: center;
     position: relative;
     width: 92%;
+    margin: var(--space2) 0;
 }
