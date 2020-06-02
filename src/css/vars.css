@@ -137,7 +137,6 @@ svg.top_svg {
 ---------------------------- INICIO MEDIA QUERYS------------
 -----------------------------------------------------------*/
 
-
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
@@ -432,7 +431,7 @@ svg.top_svg {
     grid-template-columns: [start]1fr[linea2] 1fr[end];
     grid-template-rows: [start]1fr[linea2] 1fr[end];
     gap: var(--space) var(--space3);
-    height: 130vh;
+    height: 142vh;
   }
 
   .datos_notas_info {
@@ -638,7 +637,7 @@ svg.top_svg {
     margin: 16px 0px 16px 0px;
     align-items: center;
   }
-  
+
   .seccion_invitado {
     display: block;
     text-align: center;
@@ -901,7 +900,7 @@ svg.top_svg {
     grid-template-columns: [start]1fr[linea2] 1fr[end];
     grid-template-rows: [start]1fr[linea2] 1fr[end];
     gap: var(--space) var(--space3);
-    height: 130vh;
+    height: 330vh;
   }
 
   .datos_notas_info {
@@ -1104,6 +1103,7 @@ svg.top_svg {
 
   .modal_config_logout .content-modal_config_logout {
     left: 60%;
+    top: 35%
   }
 
   .seccion_invitado {
@@ -1124,6 +1124,7 @@ svg.top_svg {
     align-content: center;
     padding-top: 3%;
   }
+
 }
 
 /* ------------- iPads (portrait) ----------- */
@@ -1285,12 +1286,12 @@ svg.top_svg {
 
   /* -------- NOTAS ------------- */
   .seccion_notas {
-    margin: 0px var(--space4);
+    margin: 0px 64px;
     display: grid;
     grid-template-columns: [start]1fr[linea2] 1fr[end];
     grid-template-rows: [start]65px[linea2] 1fr[end];
-    gap: var(--space) var(--space3);
-    height: 90vh;
+    gap: 8px 32px;
+    height: 105vh;
   }
 
   .datos_notas_info .content4 {
@@ -1323,7 +1324,7 @@ svg.top_svg {
     margin: 0 64px;
   }
 
-  .seccion_invitado h1{
+  .seccion_invitado h1 {
     margin: 0% 0% 25% 2%;
     text-align: initial;
   }
@@ -1396,6 +1397,7 @@ svg.top_svg {
     margin-top: 5%;
     justify-self: center;
   }
+
   .logo_ingreso {
     grid-column: linea2/linea3;
     grid-row: start / linea2;
@@ -1428,6 +1430,7 @@ svg.top_svg {
     margin-right: 0%;
     background-position-x: 90%;
   }
+
   .accion_registro {
     grid-column: linea2/end;
     grid-row: linea2/linea3;

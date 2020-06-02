@@ -1,95 +1,95 @@
 .card_onboarding {
-    display: grid;
-    grid-template-columns: [start]1fr[line2] 2fr[line3] 1fr[end];
-    grid-template-rows: [start]2fr [linea2] 1fr[end];
-    height: 100vh;
+	display: grid;
+	grid-template-columns: [start]1fr[line2] 2fr[line3] 1fr[end];
+	grid-template-rows: [start]2fr [linea2] 1fr[end];
+	height: 100vh;
 }
 
 .card_onboarding img {
-    height: 69vh;
+	height: 69vh;
 }
 
 .card_onboarding article {
-    grid-column: line2 / line3;
-    grid-row: start/ linea2;
-    display: flex;
-    justify-content: center;
+	grid-column: line2 / line3;
+	grid-row: start/ linea2;
+	display: flex;
+	justify-content: center;
 }
 
 .info-onboarding {
-    grid-row: linea2/end;
-    grid-column: line2 / line3;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    margin-bottom: var(--space3);
+	grid-row: linea2/end;
+	grid-column: line2 / line3;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	margin-bottom: var(--space3);
 }
 
 .info-onboarding ul {
-    list-style: none;
-    padding-left: var(--space);
-    display: flex;
-    justify-content: center;
-    margin: var(--space2) var(--space);
+	list-style: none;
+	padding-left: var(--space);
+	display: flex;
+	justify-content: center;
+	margin: var(--space2) var(--space);
 }
 
 .info-onboarding ul li::before {
-    content: "\2022";
-    font-weight: 900;
-    color: var(--gray3-color);
-    display: flex;
-    width: var(--space2);
+	content: "\2022";
+	font-weight: 900;
+	color: var(--gray3-color);
+	display: flex;
+	width: var(--space2);
 }
 
 .info-onboarding ul li.activo::before {
-    content: "\2022";
-    font-weight: 900;
-    color: var(--yellow-color);
-    display: flex;
-    width: var(--space2);
+	content: "\2022";
+	font-weight: 900;
+	color: var(--yellow-color);
+	display: flex;
+	width: var(--space2);
 }
 
 .info-onboarding h2 {
-    color: var(--black-color);
-    font-size: var(--titulo);
-    margin-bottom: var(--space);
+	color: var(--black-color);
+	font-size: var(--titulo);
+	margin-bottom: var(--space);
 }
 
 .info-onboarding p {
-    color: var(--gray-color);
-    font-size: var(--accion);
-    font-weight: 300;
-    margin: 0;
+	color: var(--gray-color);
+	font-size: var(--accion);
+	font-weight: 300;
+	margin: 0;
 }
 
 .boton_opcion {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
 }
 
 .boton_opcion .boton-dos {
-    background-color: #34507D;
-    color: #FFFFFF;
-    height: 40px;
-    width: 104px;
-    text-decoration: none;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    margin-bottom: 16px;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.9px;
+	background-color: #34507D;
+	color: #FFFFFF;
+	height: 40px;
+	width: 104px;
+	text-decoration: none;
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	-webkit-box-align: center;
+	align-items: center;
+	margin-bottom: 16px;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 0.9px;
 }
 
 .boton_opcion .invitado {
-    background: var(--white);
-    color: var(--gray-color);
-    border: solid var(--gray-color) 1px;
+	background: var(--white);
+	color: var(--gray-color);
+	border: solid var(--gray-color) 1px;
 }

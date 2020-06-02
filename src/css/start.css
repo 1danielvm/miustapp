@@ -1,63 +1,66 @@
 /* ---------------------- START --------------- */
 .fondo1 {
-        background: var(--white2-color);
+  background: var(--white2-color);
 }
 
 .start {
-    height: 100vh;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
+
 .content_loader {
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
 }
+
 .logo_loader {
-    width: 146px;
-    background-image: url(../img/logo_contipo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  width: 146px;
+  background-image: url(../img/logo_contipo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 .loader {
-    width: 120px;
-    height: 120px;
-    background-image: url(../img/img_loader.png);
-    background-size: 2159.75px 120px;
-    animation-name: loader;
-    animation-duration: 4s;
-    animation-delay: 1s;
-    animation-timing-function: steps(17);
-    animation-fill-mode: forwards;
+  width: 120px;
+  height: 120px;
+  background-image: url(../img/img_loader.png);
+  background-size: 2159.75px 120px;
+  animation-name: loader;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-timing-function: steps(17);
+  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes loader {
-    0% {
-        background-position: 0 0;
-    }
+  0% {
+    background-position: 0 0;
+  }
 
-    100% {
-        background-position: right;
-    }
+  100% {
+    background-position: right;
+  }
 }
 
 @keyframes loader {
-    0% {
-        background-position: 0 0;
-    }
+  0% {
+    background-position: 0 0;
+  }
 
-    100% {
-        background-position: right;
-    }
+  100% {
+    background-position: right;
+  }
 }
 
-.menu2{
-    display: none;
+.menu2 {
+  display: none;
 }
 
-footer{
-    display: none;
+footer {
+  display: none;
 }

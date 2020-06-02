@@ -1,145 +1,147 @@
 /* ---------------------- HORARIO--------------- */
 .seccion_horario {
-    display: grid;
-    grid-template-columns: 1fr;
-    border-radius: 16px 16px 0px 0px;
-    padding: 16px 32px 0px;
-    margin-top: -20px;
-    background-color: var(--white-color);
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 16px 16px 0px 0px;
+  padding: 16px 32px 0px;
+  margin-top: -20px;
+  background-color: var(--white-color);
 }
 
 .content_carrusel {
-    margin: 0px var(--space2);
+  margin: 0px var(--space2);
 }
 
 .nav_carrusel {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .nav_carrusel h2 {
-    font-size: var(--titulo);
-    color: var(--gray2-dark-color);
-    margin-top: var(--space2);
+  font-size: var(--titulo);
+  color: var(--gray2-dark-color);
+  margin-top: var(--space2);
 }
 
 .nav_carrusel span {
-    color: var(--gray3-color);
+  color: var(--gray3-color);
 }
 
 .nav_carrusel a {
-    display: contents;
+  display: contents;
 }
 
 .container_carrusel {
-    display: grid;
-    gap: var(--space2);
-    margin-top: var(--space3);
+  display: grid;
+  gap: var(--space2);
+  margin-top: var(--space3);
 }
 
 .container_carrusel .item {
-    display: grid;
-    grid-template-columns: 110px 1fr;
-    border-radius: var(--space);
-    align-items: center;
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  border-radius: var(--space);
+  align-items: center;
 }
 
 .item .right {
-    background: var(--white2-color);
-    padding: 16px 16px 16px 8px;
-    border-radius: 0px 8px 8px 0px;
+  background: var(--white2-color);
+  padding: 16px 16px 16px 8px;
+  border-radius: 0px 8px 8px 0px;
 }
 
 .item .left {
-    background: var(--blue-color);
-    height: 100%;
-    color: var(--white-color);
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    border-radius: 8px 0px 0px 8px;
-    line-height: 26px;
+  background: var(--blue-color);
+  height: 100%;
+  color: var(--white-color);
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  border-radius: 8px 0px 0px 8px;
+  line-height: 26px;
 }
 
 .item .right2 {
-    background-image: url(../img/img_horario.png);
-    background-size: cover;
-    color: var(--white-color);
-    padding: 16px 16px 16px 8px;
-    border-radius: 0px 8px 8px 0px;
-    height: 107px;
-    display: flex;
-    align-items: center;
-    line-height: 19px;
+  background-image: url(../img/img_horario.png);
+  background-size: cover;
+  color: var(--white-color);
+  padding: 16px 16px 16px 8px;
+  border-radius: 0px 8px 8px 0px;
+  height: 107px;
+  display: flex;
+  align-items: center;
+  line-height: 19px;
 }
 
 .item .left2 {
-    background: var(--white2-color);
-    height: 107px;
-    color: var(--gray2-dark-color);
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    border-radius: 8px 0px 0px 8px;
+  background: var(--white2-color);
+  height: 107px;
+  color: var(--gray2-dark-color);
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  border-radius: 8px 0px 0px 8px;
 }
 
 .container_carrusel h3 {
-    font-size: var(--subtitulo);
-    margin: 0;
-    font-weight: 500;
+  font-size: var(--subtitulo);
+  margin: 0;
+  font-weight: 500;
 }
 
 .container_carrusel h4 {
-    font-size: var(--normal);
-    margin-bottom: 4px;
-    color: var(--gray2-dark-color);
-    font-weight: 400;
-    line-height: 19px;
+  font-size: var(--normal);
+  margin-bottom: 4px;
+  color: var(--gray2-dark-color);
+  font-weight: 400;
+  line-height: 19px;
 }
 
 .container_carrusel p {
-    font-size: var(--medio);
-    margin: 0;
-    margin-top: var(--space);
-    color: var(--gray2-dark-color);
-    font-weight: 200;
-    line-height: 16px;
+  font-size: var(--medio);
+  margin: 0;
+  margin-top: var(--space);
+  color: var(--gray2-dark-color);
+  font-weight: 200;
+  line-height: 16px;
 }
 
 .right2 p {
-    font-size: 16px;
-    margin: 0;
-    margin-top: 26px;
-    color: #47494D;
-    font-weight: 200;
-    line-height: 19px;
-    width: 83px;
+  font-size: 16px;
+  margin: 0;
+  margin-top: 26px;
+  color: #47494D;
+  font-weight: 200;
+  line-height: 19px;
+  width: 83px;
 }
 
 .hs {
-        display: grid;
-        grid-template-columns: [start]100% [linea2] 100% [linea3] 100% [linea4] 100% [linea5] 100% [end];
-        grid-template-rows: 1fr;
-        overflow-x: scroll;
-        scroll-snap-type: x proximity;
-        align-items: flex-start;
-        gap: 0 150px;
+  display: grid;
+  grid-template-columns: [start]100% [linea2] 100% [linea3] 100% [linea4] 100% [linea5] 100% [end];
+  grid-template-rows: 1fr;
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  align-items: flex-start;
+  gap: 0 150px;
 
 }
+
 .hs>li,
 .content_carrusel {
-    scroll-snap-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
+
 ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }

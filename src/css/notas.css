@@ -1,238 +1,239 @@
 /* ---------------------- NOTAS--------------- */
 .seccion_notas {
-    display: grid;
-    grid-template-columns: 1fr;
-    border-radius: 16px 16px 0px 0px;
-    padding: 16px 16px 0px;
-    margin-top: -20px;
-    background-color: var(--white-color);
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 16px 16px 0px 0px;
+  padding: 16px 16px 0px;
+  margin-top: -20px;
+  background-color: var(--white-color);
+  height: 100%;
 }
 
 h3.sub_notas {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 h3.sub_notas span {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .datos_notas h2 {
-    font-size: var(--titulo);
-    color: var(--gray2-dark-color);
-    margin-top: var(--space);
-    padding-right: var(--space3);
-    margin-bottom: 0;
+  font-size: var(--titulo);
+  color: var(--gray2-dark-color);
+  margin-top: var(--space);
+  padding-right: var(--space3);
+  margin-bottom: 0;
 }
 
 .grafica img {
-    width: 100%;
-    margin-top: var(--space2);
+  width: 100%;
+  margin-top: var(--space2);
 }
 
 .card_notas {
-    background: var(--gray2-color);
-    border-radius: var(--space);
-    padding: var(--space2);
-    margin-bottom: var(--space2);
+  background: var(--gray2-color);
+  border-radius: var(--space);
+  padding: var(--space2);
+  margin-bottom: var(--space2);
 }
 
 .info_card {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
 }
 
 .info_card p {
-    font-size: var(--subtitulo);
-    color: var(--gray-dark--color);
-    margin: 0;
+  font-size: var(--subtitulo);
+  color: var(--gray-dark--color);
+  margin: 0;
 }
 
 .header_card p {
-    color: var(--blue-color);
-    font-weight: bold;
-    position: absolute;
-    width: 82%;
-    text-align: end;
+  color: var(--blue-color);
+  font-weight: bold;
+  position: absolute;
+  width: 82%;
+  text-align: end;
 }
 
 .info_card span {
-    font-size: var(--normal);
-    color: var(--gray-color);
-    margin-bottom: var(--space);
+  font-size: var(--normal);
+  color: var(--gray-color);
+  margin-bottom: var(--space);
 }
 
 .card_notas a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .card_notas .boton {
-    margin-top: 24px;
-    width: 100%;
-    height: 42px;
-    background: var(--blue-color);
-    border-bottom: solid 2px var(--yellow-color);
-    color: var(--white-color);
-    font-size: var(--normal);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: var(--space);
+  margin-top: 24px;
+  width: 100%;
+  height: 42px;
+  background: var(--blue-color);
+  border-bottom: solid 2px var(--yellow-color);
+  color: var(--white-color);
+  font-size: var(--normal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--space);
 }
 
 /* ---------------------- INFORMACIÓN NOTAS--------------- */
 .info_grafica img {
-    width: 60%;
+  width: 60%;
 }
 
 .info_grafica {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: var(--space3) 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: var(--space3) 0px;
 }
 
 .datos_notas_info h2 {
-    font-size: var(--accion);
-    color: var(--gray2-dark-color);
-    margin-top: var(--space);
-    padding-left: var(--space2);
-    margin-bottom: 4px;
-    font-weight: 600;
+  font-size: var(--accion);
+  color: var(--gray2-dark-color);
+  margin-top: var(--space);
+  padding-left: var(--space2);
+  margin-bottom: 4px;
+  font-weight: 600;
 }
 
 .datos_notas_info h3 {
-    font-size: var(--subtitulo);
-    color: var(--gray-color);
+  font-size: var(--subtitulo);
+  color: var(--gray-color);
 }
 
 .datos_notas_info span {
-    font-size: var(--subtitulo);
-    color: var(--gray2-dark-color);
-    margin-bottom: 0;
+  font-size: var(--subtitulo);
+  color: var(--gray2-dark-color);
+  margin-bottom: 0;
 }
 
 h2.titulo_notas {
-    padding: 0;
-    font-size: var(--titulo);
+  padding: 0;
+  font-size: var(--titulo);
 }
 
 .info_card1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
 }
 
 .card_notas_info {
-    background: var(--white2-color);
-    margin-bottom: var(--space3);
-    font-size: var(--subtitulo);
-    padding: var(--space2);
-    border-radius: var(--space);
+  background: var(--white2-color);
+  margin-bottom: var(--space3);
+  font-size: var(--subtitulo);
+  padding: var(--space2);
+  border-radius: var(--space);
 }
 
 .card_notas_info h1 {
-    margin-bottom: 0;
-    color: var(--gray2-dark-color);
-    font-size: var(--titulo);
+  margin-bottom: 0;
+  color: var(--gray2-dark-color);
+  font-size: var(--titulo);
 }
 
 .card_notas_info span {
-    font-size: var(--medio);
-    color: var(--gray-color);
-    margin-bottom: var(--space);
+  font-size: var(--medio);
+  color: var(--gray-color);
+  margin-bottom: var(--space);
 }
 
 .card_notas_info p {
-    font-size: var(--accion);
-    margin-bottom: 4px;
+  font-size: var(--accion);
+  margin-bottom: 4px;
 }
 
 .titular_card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 48px;
 }
 
 .titular_card .item_info {
-    text-align: -webkit-center;
+  text-align: -webkit-center;
 }
 
 .titular_card .item_info h2 {
-    font-size: var(--titulo);
-    font-weight: 400;
-    padding: 0 var(--space2);
-    margin: 0
+  font-size: var(--titulo);
+  font-weight: 400;
+  padding: 0 var(--space2);
+  margin: 0
 }
 
 .titular_card .item_info span {
-    font-size: var(--titulo);
-    color: var(--gray-color);
+  font-size: var(--titulo);
+  color: var(--gray-color);
 }
 
 h1.titel_short {
-    margin-top: 11%;
+  margin-top: 11%;
 }
 
 
 .titular_card .item_info p {
-    font-size: var(--pequeno);
-    margin: 0;
-    color: var(--gray-color);
-    font-weight: 500;
-    grid-column: linea2/end;
-    display: flex;
-    justify-content: center;
-    width: 63%;
+  font-size: var(--pequeno);
+  margin: 0;
+  color: var(--gray-color);
+  font-weight: 500;
+  grid-column: linea2/end;
+  display: flex;
+  justify-content: center;
+  width: 63%;
 }
 
 .punto_azul {
-    height: var(--space);
-    width: var(--space);
-    background: var(--blue2-color);
-    border-radius: 50%;
-    margin: var(--space);
+  height: var(--space);
+  width: var(--space);
+  background: var(--blue2-color);
+  border-radius: 50%;
+  margin: var(--space);
 }
 
 .punto_amarillo {
-    height: var(--space);
-    width: var(--space);
-    background: var(--yellow-color);
-    border-radius: 50%;
-    margin: var(--space);
+  height: var(--space);
+  width: var(--space);
+  background: var(--yellow-color);
+  border-radius: 50%;
+  margin: var(--space);
 }
 
 /* --------NOTAS INVITADO---------------- */
 .seccion_invitado {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    text-align: center;
-    justify-items: center;
-    border-radius: 16px 16px 0px 0px;
-    margin-top: -20px;
-    background-color: var(--white-color);
-    padding: 16px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+  justify-items: center;
+  border-radius: 16px 16px 0px 0px;
+  margin-top: -20px;
+  background-color: var(--white-color);
+  padding: 16px 0;
 }
 
 .seccion_invitado h1 {
-    justify-self: start;
+  justify-self: start;
 }
 
 .seccion_invitado .content1 img {
-    width: 100%;
+  width: 100%;
 }
 
 .seccion_invitado .content5 {
-    width: 55%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-    padding-top: 20%;
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  padding-top: 20%;
 }
 
 .seccion_invitado .content5 p {
-    font-size: 18px;
-    color: var(--gray2-dark-color);
+  font-size: 18px;
+  color: var(--gray2-dark-color);
 }

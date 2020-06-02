@@ -1,34 +1,34 @@
 /* ---------------------- INGRESO --------------- */
 .ingreso {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: [start] 1fr [linea2] 146px [linea3] 1fr[end];
-    grid-template-rows: [start] 1fr[linea2] 1fr [end];
+  height: 100vh;
+  display: grid;
+  grid-template-columns: [start] 1fr [linea2] 146px [linea3] 1fr[end];
+  grid-template-rows: [start] 1fr[linea2] 1fr [end];
 }
 
 .logo_ingreso {
-    grid-column: linea2/linea3;
-    grid-row: start / linea2;
-    width: 100%;
-    background-image: url(../img/logo_contipo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
+  grid-column: linea2/linea3;
+  grid-row: start / linea2;
+  width: 100%;
+  background-image: url(../img/logo_contipo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .accion_ingreso {
-    grid-column: start/end;
-    grid-row: linea2/ end;
-    margin-top: 20%;
-    justify-self: center;
+  grid-column: start/end;
+  grid-row: linea2/ end;
+  margin-top: 20%;
+  justify-self: center;
 }
 
 .accion_ingreso a {
-    width: 100%;
+  width: 100%;
 }
 
 .accion_ingreso .invitado {
-    background: var(--white);
-    color: var(--gray-color);
-    border: solid var(--gray-color) 1px;
+  background: var(--white);
+  color: var(--gray-color);
+  border: solid var(--gray-color) 1px;
 }

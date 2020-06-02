@@ -1,71 +1,71 @@
 /* ---------------------- SECCION NOTICIAS--------------- */
 .seccion_estudiantes {
-    display: grid;
-    grid-template-columns: 1fr;
-    border-radius: 16px 16px 0px 0px;
-    padding: 16px 0px;
-    margin-top: -20px;
-    background-color: var(--white-color);
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 16px 16px 0px 0px;
+  padding: 16px 0px;
+  margin-top: -20px;
+  background-color: var(--white-color);
 }
 
 .estudiantes_info {
-    margin: 0px var(--space2);
+  margin: 0px var(--space2);
 }
 
 .estudiantes_info h2 {
-    margin-top: var(--space);
-    font-size: var(--titulo);
-    color: var(--gray2-dark-color);
+  margin-top: var(--space);
+  font-size: var(--titulo);
+  color: var(--gray2-dark-color);
 }
 
 .card_content {
-    background: var(--white2-color);
-    border-radius: var(--space);
+  background: var(--white2-color);
+  border-radius: var(--space);
 }
 
 .content_text {
-    margin: var(--space2) 12px;
+  margin: var(--space2) 12px;
 }
 
 .content_text h3 {
-    font-size: var(--subtitulo);
-    color: var(--gray2-dark-color);
-    line-height: 24px;
-    font-weight: 600;
+  font-size: var(--subtitulo);
+  color: var(--gray2-dark-color);
+  line-height: 24px;
+  font-weight: 600;
 }
 
 .content_text p {
-    color: var(--gray2-dark-color);
-    font-size: var(--normal);
-    line-height: 21px;
-    font-weight: 200;
+  color: var(--gray2-dark-color);
+  font-size: var(--normal);
+  line-height: 21px;
+  font-weight: 200;
 }
 
 .content_img img {
-    width: 100%;
-    border-radius: var(--space);
+  width: 100%;
+  border-radius: var(--space);
 }
 
 .card_estudiante_info a {
-    text-decoration: none;
-    display: flex;
+  text-decoration: none;
+  display: flex;
 }
 
 .card_estudiante_info .boton {
-    margin-top: var(--space);
-    margin-bottom: var(--space2);
-    width: 125px;
-    height: 32px;
-    background: var(--blue-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: var(--space);
+  margin-top: var(--space);
+  margin-bottom: var(--space2);
+  width: 125px;
+  height: 32px;
+  background: var(--blue-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--space);
 }
 
 .card_estudiante_info .boton p {
-    font-size: var(--medio);
-    color: var(--white-color);
-    margin: 0;
-    font-weight: 300;
+  font-size: var(--medio);
+  color: var(--white-color);
+  margin: 0;
+  font-weight: 300;
 }

@@ -1,70 +1,70 @@
 /* ---------------------- REGISTRO --------------- */
 .registro {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: [start] 1fr [linea2] 146px [linea3] 1fr[end];
-    grid-template-rows: [start] 1fr[linea2] 1fr [end];
+  height: 100vh;
+  display: grid;
+  grid-template-columns: [start] 1fr [linea2] 146px [linea3] 1fr[end];
+  grid-template-rows: [start] 1fr[linea2] 1fr [end];
 }
 
 .logo_registro {
-    grid-column: linea2/linea3;
-    grid-row: start / linea2;
-    width: 100%;
-    background-image: url(../img/logo_contipo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  grid-column: linea2/linea3;
+  grid-row: start / linea2;
+  width: 100%;
+  background-image: url(../img/logo_contipo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .accion_registro {
-    grid-column: start/end;
-    grid-row: linea2/ end;
-    padding-top: 20px;
-    justify-self: center;
+  grid-column: start/end;
+  grid-row: linea2/ end;
+  padding-top: 20px;
+  justify-self: center;
 }
 
 .accion_registro input {
-    background: var(--white-color);
-    height: 30px;
-    width: 228px;
-    margin: var(--space) 0px;
-    border: solid 1px var(--gray3-color);
-    border-radius: var(--space);
-    color: var(--gray-dark-color);
-    text-align: start;
-    font-size: var(--normal);
-    font-weight: 300;
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: var(--space);
+  background: var(--white-color);
+  height: 30px;
+  width: 228px;
+  margin: var(--space) 0px;
+  border: solid 1px var(--gray3-color);
+  border-radius: var(--space);
+  color: var(--gray-dark-color);
+  text-align: start;
+  font-size: var(--normal);
+  font-weight: 300;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: var(--space);
 }
 
-.accion_registro p{
-    margin-bottom: 4px;
-    margin-top: 14px;
-    color: var(--gray2-dark-color);
+.accion_registro p {
+  margin-bottom: 4px;
+  margin-top: 14px;
+  color: var(--gray2-dark-color);
 }
 
-.accion_registro input:focus{
-    color: var(--black-color);
+.accion_registro input:focus {
+  color: var(--black-color);
 }
 
 
 .accion_registro .boton-dos {
-    background-color: var(--blue-color);
-    color: var(--white-color);
-    height: 40px;
-    width: 104px;
-    text-decoration: none;
-    border-radius: var(--space);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 10px;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  height: 40px;
+  width: 104px;
+  text-decoration: none;
+  border-radius: var(--space);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px;
 }
 
 .accion_registro .invitado {
-    background: var(--white);
-    color: var(--gray-color);
-    border: solid var(--gray-color) 1px;
+  background: var(--white);
+  color: var(--gray-color);
+  border: solid var(--gray-color) 1px;
 }
