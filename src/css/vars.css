@@ -144,7 +144,15 @@ svg.top_svg {
   /* ---------------------- ONBOARDING --------------------*/
 
   .info-onboarding {
-    padding: 0% 10%;
+    padding: 3% 10% 0%;
+  }
+
+  .boton_opcion {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding: 0% 22%;
   }
 
   .boton-cuatro {
@@ -156,6 +164,12 @@ svg.top_svg {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .boton-cuatro p {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
   }
 
   /* ------------------- REGISTRO ------------------ */
@@ -624,6 +638,30 @@ svg.top_svg {
     margin: 16px 0px 16px 0px;
     align-items: center;
   }
+  
+  .seccion_invitado {
+    display: block;
+    text-align: center;
+    justify-items: center;
+    text-align: -webkit-center;
+    margin-top: 0;
+    height: 68vh;
+    margin-bottom: 0;
+  }
+
+  .seccion_invitado .content5 {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-top: 3%;
+  }
+
+  .seccion_invitado h1 {
+    text-align: initial;
+    padding-top: 11px;
+  }
 }
 
 /* --------------------------- DISPOSITIVOS LANDSCAPE-------- */
@@ -655,7 +693,7 @@ svg.top_svg {
     text-align: -webkit-center;
     align-self: flex-end;
     margin-bottom: var(--space3);
-    width: 56%;
+    width: 76%;
     justify-self: center;
   }
 
@@ -714,6 +752,7 @@ svg.top_svg {
     background-repeat: no-repeat;
     background-position: center;
     height: 58vh;
+    margin-bottom: 0;
   }
 
   .accion_registro {
@@ -722,13 +761,6 @@ svg.top_svg {
     justify-self: center;
   }
 
-  .seccion_invitado {
-    margin: var(--space2) var(--space4);
-    display: grid;
-    grid-template-columns: [start]1fr[linea2] 1fr[end];
-    grid-template-rows: 1fr;
-    padding: 0;
-  }
 
   /*------------------- NOTICIAS -------------------*/
   .seccion_noticias,
@@ -1073,11 +1105,40 @@ svg.top_svg {
   .modal_config_logout .content-modal_config_logout {
     left: 60%;
   }
+
+  .seccion_invitado {
+    margin: 16px 64px;
+    display: grid;
+    grid-template-columns: [start]1fr[linea2] 47%[end];
+    grid-template-rows: 1fr;
+    padding: 0;
+    height: 75vh;
+    padding-bottom: 10%;
+  }
+
+  .seccion_invitado .content5 {
+    width: 52%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-top: 3%;
+  }
 }
 
 /* ------------- iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  .boton_opcion {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding: 0px 13%;
+  }
 
+  .info-onboarding {
+    padding: 12% 10% 0%;
+  }
 
   .seccion_noticias,
   .seccion_estudiantes,
@@ -1254,11 +1315,17 @@ svg.top_svg {
 
   .seccion_invitado {
     display: block;
-    padding-top: 12%;
+    padding-top: 2%;
     text-align: center;
     justify-items: center;
-    width: 100%;
+    height: 77vh;
     text-align: -webkit-center;
+    margin: 0 64px;
+  }
+
+  .seccion_invitado h1{
+    margin: 0% 0% 25% 2%;
+    text-align: initial;
   }
 
   .seccion_horario {
@@ -1303,13 +1370,12 @@ svg.top_svg {
   .info-onboarding {
     grid-column: line2 / end;
     grid-row: 1;
-    display: initial;
     flex-wrap: wrap;
     justify-content: center;
     text-align: -webkit-center;
     align-self: center;
-    margin-bottom: var(--space3);
-    width: 56%;
+    margin-bottom: 32px;
+    width: 63%;
     justify-self: center;
     margin-top: 18%;
   }
@@ -1330,10 +1396,7 @@ svg.top_svg {
     margin-top: 5%;
     justify-self: center;
   }
-
-  /*------------------- REGISTRO --------------------*/
-
-  .logo_registro {
+  .logo_ingreso {
     grid-column: linea2/linea3;
     grid-row: start / linea2;
     width: 100%;
@@ -1342,6 +1405,55 @@ svg.top_svg {
     background-repeat: no-repeat;
     background-position: bottom;
     margin-bottom: 20%;
+  }
+
+  /*------------------- REGISTRO --------------------*/
+
+  .registro {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: [start] 1fr [linea2] 1fr[end];
+    grid-template-rows: [start] 1fr[linea2] 1fr [linea3]1fr [end];
+  }
+
+  .logo_registro {
+    grid-column: start/linea2;
+    grid-row: linea2/linea3;
+    width: 100%;
+    background-image: url(../img/logo_contipo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin: 6% 0;
+    margin-right: 0%;
+    background-position-x: 90%;
+  }
+  .accion_registro {
+    grid-column: linea2/end;
+    grid-row: linea2/linea3;
+    padding: 6% 0px 0px 6%;
+    justify-self: flex-start;
+    /* margin-left: 20%; */
+  }
+
+  .accion_registro input {
+    background: #FFFFFF;
+    height: 30px;
+    width: 240px;
+    margin: 8px 0px;
+    border: solid 1px #CBCBCB;
+    border-radius: 8px;
+    color: var(--gray-dark-color);
+    text-align: start;
+    font-size: 16px;
+    font-weight: 300;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 8px;
+    /* margin-right: 0px; */
   }
 
   /* ------------------- MENU ---------------------- */
@@ -1358,14 +1470,14 @@ svg.top_svg {
   }
 
   .menu2 {
-    height: 80px;
+    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 20;
+    z-index: 10;
     width: 100%;
     background: var(--white-color);
     box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.11);
@@ -1536,7 +1648,6 @@ svg.top_svg {
   .seccion_noticias,
   .seccion_estudiantes,
   .seccion_horario,
-  .seccion_invitado,
   .seccion_notas,
   .seccion_config {
     display: grid;
@@ -1835,12 +1946,13 @@ svg.top_svg {
   /* -------------------INVITADO ------------------------ */
   .seccion_invitado {
     display: grid;
-    background: var(--white-color);
+    background: #FFFFFF;
     padding: 32px 64px 0%;
-    height: 76vh;
+    height: 85vh;
     margin: 0% 22%;
     grid-template-columns: [start]1fr[linea2] 1fr[end];
-    gap: var(--space2) var(--space3);
+    gap: 16px 32px;
+    -ms-flex-line-pack: center;
     align-content: center;
     grid-template-rows: 1fr;
     margin-top: 85px;
@@ -1854,7 +1966,7 @@ svg.top_svg {
   }
 
   .seccion_invitado .content5 {
-    width: 55%;
+    width: 45%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

@@ -63,3 +63,33 @@
     font-weight: 300;
     margin: 0;
 }
+
+.boton_opcion {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.boton_opcion .boton-dos {
+    background-color: #34507D;
+    color: #FFFFFF;
+    height: 40px;
+    width: 104px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.9px;
+}
+
+.boton_opcion .invitado {
+    background: var(--white);
+    color: var(--gray-color);
+    border: solid var(--gray-color) 1px;
+}
