@@ -1,82 +1,83 @@
 /*----------------- COMPONENTES BOTONES-------------------------- */
 .boton-uno {
-	background-color: var(--blue-color);
-	color: var(--white-color);
-	height: 48px;
-	width: 184px;
-	text-decoration: none;
-	border-radius: var(--space);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: var(--space2);
-	font-weight: 400;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  height: 48px;
+  width: 184px;
+  text-decoration: none;
+  border-radius: var(--space);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--space2);
+  font-weight: 400;
 }
 
 .boton-uno p {
-	margin-bottom: 0;
-	font-size: var(--medio);
+  margin-bottom: 0;
+  font-size: var(--medio);
 }
 
 .boton-uno.ingresar p {
-	color: var(--white-color);
-	font-weight: 300;
-	line-height: 21px;
-	font-size: var(--medio);
+  color: var(--white-color);
+  font-weight: 300;
+  line-height: 21px;
+  font-size: var(--medio);
 }
 
 .boton-dos {
-	background-color: var(--blue-color);
-	color: var(--white-color);
-	height: 40px;
-	width: 104px;
-	text-decoration: none;
-	border-radius: var(--space);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: var(--space2);
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  height: 40px;
+  width: 104px;
+  border: none;
+  text-decoration: none;
+  border-radius: var(--space);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--space2);
 }
 
 .horizontal-boton {
-	display: flex;
+  display: flex;
 }
 
 .boton-cuatro {
-	text-align: center;
-	background-color: var(--blue-color);
-	border-radius: var(--space);
-	width: 167.48px;
-	height: 48px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  text-align: center;
+  background-color: var(--blue-color);
+  border-radius: var(--space);
+  width: 167.48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .boton-cuatro p {
-	color: var(--white-color);
-	font-size: var(--medio);
-	font-weight: 400;
+  color: var(--white-color);
+  font-size: var(--medio);
+  font-weight: 400;
 }
 
 .btn5 {
-	background-color: var(--blue-color);
-	height: 24px;
-	width: 77px;
-	border-radius: var(--space);
-	margin-top: 4px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  background-color: var(--blue-color);
+  height: 24px;
+  width: 77px;
+  border-radius: var(--space);
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn5 h4 {
-	margin: 0;
-	padding: 0;
-	font-size: var(--medio);
-	font-weight: 300;
+  margin: 0;
+  padding: 0;
+  font-size: var(--medio);
+  font-weight: 300;
 }
 
 .oculto {
-	display: none;
+  display: none;
 }

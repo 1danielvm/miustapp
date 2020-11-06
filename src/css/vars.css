@@ -1,7 +1,8 @@
 /* ---------------------- VARIABLES -------------- */
 :root {
   /* -------- tipografía------ */
-  --font1: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+  --font1: "Oxygen", sans-serif;
+  --font2: "Inter", sans-serif;
   --normal: 16px;
   --seccion: 34px;
   --titulo: 28px;
@@ -11,20 +12,20 @@
   --accion: 17px;
   --menu: 10px;
   /* -------- colores------ */
-  --white-color: #FFFFFF;
-  --white2-color: #F8F8F8;
+  --white-color: #ffffff;
+  --white2-color: #f8f8f8;
   --gray-color: #969696;
-  --gray2-color: #EEEEEE;
-  --gray3-color: #CBCBCB;
-  --gray-dark--color: #4D4D4D;
-  --gray2-dark-color: #47494D;
-  --blue-color: #34507D;
-  --blue2-color: #3B8CC5;
-  --blue3-color: #2A73A5;
+  --gray2-color: #eeeeee;
+  --gray3-color: #cbcbcb;
+  --gray-dark-color: #4d4d4d;
+  --gray2-dark-color: #47494d;
+  --blue-color: #34507d;
+  --blue2-color: #3b8cc5;
+  --blue3-color: #2a73a5;
   --black-color: #000000;
-  --red-color: #FD3B2F;
-  --yellow-color: #FDBB26;
-  --green-color: #34B591;
+  --red-color: #fd3b2f;
+  --yellow-color: #fdbb26;
+  --green-color: #34b591;
   /* -------- espaciado------ */
   --space: 8px;
   --space2: 16px;
@@ -45,8 +46,6 @@
     align-items: center;
     margin-bottom: var(--space2);
   }
-
-  ;
 
   --boton-dos: {
     margin: var(--space2);
@@ -85,7 +84,7 @@
   background: var(--blue2-color);
   border-radius: 50%;
   cursor: pointer;
-  transition: .2s;
+  transition: 0.2s;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -98,7 +97,7 @@ svg.top_svg {
   top: 22%;
   left: 35%;
   transform: translate(-50%, -50%) scale(0);
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .show {
@@ -106,7 +105,7 @@ svg.top_svg {
 }
 
 .show .top-button {
-  animation: popup .3s ease-in-out;
+  animation: popup 0.3s ease-in-out;
   width: 40px;
   height: 40px;
   z-index: 110;
@@ -138,8 +137,7 @@ svg.top_svg {
 -----------------------------------------------------------*/
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* ---------------------- ONBOARDING --------------------*/
 
   .info-onboarding {
@@ -166,7 +164,7 @@ svg.top_svg {
   }
 
   .boton-cuatro p {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 400;
   }
@@ -210,7 +208,6 @@ svg.top_svg {
     grid-template-columns: [start]1fr[linea2] 1fr[end];
     grid-template-rows: 1fr;
     padding: 0;
-
   }
 
   .tendencias {
@@ -237,7 +234,8 @@ svg.top_svg {
   }
 
   .background-card {
-    background: transparent linear-gradient(180deg, #FFFFFF 0%, #000000 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(180deg, #ffffff 0%, #000000 100%) 0%
+      0% no-repeat padding-box;
     mix-blend-mode: multiply;
     z-index: 2;
     height: 177px;
@@ -323,7 +321,7 @@ svg.top_svg {
     grid-row: linea3 / end;
     grid-column: start/end;
     height: 200px;
-    background: url('../img/img_config.png');
+    background: url("../img/img_config.png");
     border-radius: var(--space);
     background-size: cover;
     background-repeat: no-repeat;
@@ -511,7 +509,6 @@ svg.top_svg {
     margin-left: 21px;
   }
 
-
   /* ------------------------- HORARIO ----------------------------- */
   .content_carrusel {
     grid-column: start / end;
@@ -665,7 +662,6 @@ svg.top_svg {
 
 /* --------------------------- DISPOSITIVOS LANDSCAPE-------- */
 @media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
-
   /*------------------- ONBOARDING --------------------*/
   .card_onboarding {
     display: grid;
@@ -743,7 +739,7 @@ svg.top_svg {
 
   /* ------------------- REGISTRO ------------------ */
   .logo_registro {
-    grid-column: start /linea2;
+    grid-column: start / linea2;
     grid-row: 1;
     width: 100%;
     background-image: url(../img/logo_contipo.png);
@@ -755,11 +751,10 @@ svg.top_svg {
   }
 
   .accion_registro {
-    grid-column: linea2 /end;
+    grid-column: linea2 / end;
     grid-row: 1;
     justify-self: center;
   }
-
 
   /*------------------- NOTICIAS -------------------*/
   .seccion_noticias,
@@ -986,7 +981,6 @@ svg.top_svg {
     width: 45px;
   }
 
-
   /* ------------------------- HORARIO ----------------------------- */
   .content_carrusel {
     grid-column: start / end;
@@ -1103,7 +1097,7 @@ svg.top_svg {
 
   .modal_config_logout .content-modal_config_logout {
     left: 60%;
-    top: 35%
+    top: 35%;
   }
 
   .seccion_invitado {
@@ -1124,11 +1118,10 @@ svg.top_svg {
     align-content: center;
     padding-top: 3%;
   }
-
 }
 
 /* ------------- iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .boton_opcion {
     width: 100%;
     display: grid;
@@ -1186,7 +1179,7 @@ svg.top_svg {
     grid-row: linea3 / end;
     grid-column: start/end;
     height: 200px;
-    background: url('../img/img_config.png');
+    background: url("../img/img_config.png");
     border-radius: var(--space);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1221,8 +1214,8 @@ svg.top_svg {
   }
 
   .show .top-button {
-    -webkit-animation: popup .3s ease-in-out;
-    animation: popup .3s ease-in-out;
+    -webkit-animation: popup 0.3s ease-in-out;
+    animation: popup 0.3s ease-in-out;
     width: 50px;
     height: 50px;
     z-index: 110;
@@ -1236,8 +1229,8 @@ svg.top_svg {
     left: 37%;
     -webkit-transform: translate(-50%, -50%) scale(0);
     transform: translate(-50%, -50%) scale(0);
-    -webkit-transition: .2s;
-    transition: .2s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
   }
 
   .buscar_directorio {
@@ -1339,7 +1332,6 @@ svg.top_svg {
 
 /* --------------------------- DESKTOP, iPAD PRO, TV-------- */
 @media only screen and (min-width: 1025px) {
-
   /*------------------- ONBOARDING --------------------*/
   .onboarding {
     display: flex !important;
@@ -1440,11 +1432,11 @@ svg.top_svg {
   }
 
   .accion_registro input {
-    background: #FFFFFF;
+    background: #ffffff;
     height: 30px;
     width: 240px;
     margin: 8px 0px;
-    border: solid 1px #CBCBCB;
+    border: solid 1px #cbcbcb;
     border-radius: 8px;
     color: var(--gray-dark-color);
     text-align: start;
@@ -1519,8 +1511,6 @@ svg.top_svg {
   .menu2 .tags p {
     margin: 0;
   }
-
-
 
   /* ------------------- HEADER ---------------------- */
   .navbar_config2 {
@@ -1665,8 +1655,6 @@ svg.top_svg {
     margin-top: 85px;
   }
 
-
-
   /*----------------- NOTICIA TIPO 2 ------------- */
   .tend_noticia_tipe1 {
     grid-auto-columns: start/end;
@@ -1689,7 +1677,6 @@ svg.top_svg {
     overflow: scroll;
     height: 720px;
   }
-
 
   /* ------------------ ESTUDIANTE ---------------- */
   .estudiantes_info {
@@ -1755,8 +1742,6 @@ svg.top_svg {
   .indicaciones_text {
     margin-top: 0;
   }
-
-
 
   /* ------------------------- HORARIO ----------------------------- */
   .content_carrusel {
@@ -1911,7 +1896,7 @@ svg.top_svg {
     height: 320px;
     width: 222px;
     object-fit: cover;
-    transform: scale(1.);
+    transform: scale(1);
   }
 
   /* --------------------- DIRECTORIO  ----------------- */
@@ -1949,7 +1934,7 @@ svg.top_svg {
   /* -------------------INVITADO ------------------------ */
   .seccion_invitado {
     display: grid;
-    background: #FFFFFF;
+    background: #ffffff;
     padding: 32px 64px 0%;
     height: 85vh;
     margin: 0% 22%;

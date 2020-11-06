@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="./dist/css/estilos.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./dist/css/animsition.min.css"
+    />
+    <link rel="icon" sizes="192x192" href="./dist/img/logo_sitio.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <meta
+      name="description"
+      content="Aplicación hecha por estudiantes para estudiantes. ENJOY."
+    />
+    <meta
+      name="author"
+      content="Daniel Valderrama Mendoza, Juan David Rey Peña & Julian Esteban Espinosa Orozco"
+    />
+    <title>Configuracion</title>
+  </head>
+
+  <body>
+    <!-- Aquí empieza el tapbar -->
+    <div class="menu">
+      <div class="menu_left"></div>
+      <div class="menu_center">
+        <a href="./noticias.html">
+          <div class="menu_icono">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 25.5 25.5"
+            >
+              <path
+                class="inactivo"
+                d="M22.95,0H7.65A2.557,2.557,0,0,0,5.1,2.55V21.675a1.275,1.275,0,1,1-2.55,0V7.65A1.371,1.371,0,0,0,1.275,6.375,1.371,1.371,0,0,0,0,7.65v15.3A2.557,2.557,0,0,0,2.55,25.5h20.4a2.557,2.557,0,0,0,2.55-2.55V2.55A2.557,2.557,0,0,0,22.95,0ZM16.575,12.75H8.925A1.278,1.278,0,0,1,7.65,11.475,1.371,1.371,0,0,1,8.925,10.2h7.65a1.371,1.371,0,0,1,1.275,1.275A1.278,1.278,0,0,1,16.575,12.75Zm5.1-5.1H8.925A1.278,1.278,0,0,1,7.65,6.375,1.371,1.371,0,0,1,8.925,5.1h12.75A1.371,1.371,0,0,1,22.95,6.375,1.278,1.278,0,0,1,21.675,7.65Z"
+              />
+            </svg>
+            <p>Noticias</p>
+          </div>
+        </a>
+        <a href="./directorio.html">
+          <div class="menu_icono">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21.38"
+              height="21.38"
+              viewBox="0 0 25 25"
+            >
+              <g transform="translate(0 0)">
+                <path
+                  class="inactivo"
+                  d="M24.282,17.648,18.811,15.3a1.2,1.2,0,0,0-1.355.313l-2.4,2.972A17.9,17.9,0,0,1,6.409,9.93l2.97-2.4a1.122,1.122,0,0,0,.313-1.356L7.347.7A1.193,1.193,0,0,0,5.992.023L.886,1.17A1.174,1.174,0,0,0,0,2.317,22.691,22.691,0,0,0,22.667,25h0a1.174,1.174,0,0,0,1.146-.886L24.96,19A1.166,1.166,0,0,0,24.282,17.648Z"
+                />
+              </g>
+            </svg>
+            <p>Directorio</p>
+          </div>
+        </a>
+        <a href="./mapa.html">
+          <div class="menu_icono">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15.71"
+              height="21.5"
+              viewBox="0 0 19 26"
+            >
+              <g transform="translate(0 0)">
+                <path
+                  class="inactivo"
+                  d="M9.5,26h0c-.1-.113-2.442-2.818-4.749-6.113C2.583,16.79,0,12.519,0,9.749A9.81,9.81,0,0,1,2.791,2.864a9.292,9.292,0,0,1,13.419,0A9.81,9.81,0,0,1,19,9.749c0,2.77-2.583,7.041-4.75,10.136-2.3,3.29-4.65,6-4.749,6.113Zm0-19.5a3.251,3.251,0,1,0,3.167,3.25A3.213,3.213,0,0,0,9.5,6.5Z"
+                  transform="translate(0 0)"
+                />
+              </g>
+            </svg>
+            <p>Mapa</p>
+          </div>
+        </a>
+        <a href="./notas.html">
+          <div class="menu_icono">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 23 23"
+            >
+              <g transform="translate(0 0)">
+                <path
+                  class="inactivo"
+                  d="M20.549,23H2.448A2.473,2.473,0,0,1,0,20.509V2.444A2.449,2.449,0,0,1,2.448,0H20.6a2.406,2.406,0,0,1,1.721.718A2.317,2.317,0,0,1,23,2.444V20.557A2.449,2.449,0,0,1,20.549,23Zm-4.9-9.87a.837.837,0,0,0-.817.814v3.307a.837.837,0,0,0,.817.814h1.632a.836.836,0,0,0,.816-.814V13.943a.836.836,0,0,0-.816-.814ZM10.707,4.936a.837.837,0,0,0-.817.815v11.5a.837.837,0,0,0,.817.814h1.632a.837.837,0,0,0,.817-.814V5.751a.837.837,0,0,0-.817-.815ZM5.762,9.871a.837.837,0,0,0-.817.815v6.564a.837.837,0,0,0,.817.814H7.394a.836.836,0,0,0,.816-.814V10.686a.837.837,0,0,0-.816-.815Z"
+                  transform="translate(0 0)"
+                />
+              </g>
+            </svg>
+            <p>Notas</p>
+          </div>
+        </a>
+        <a href="./horario.html">
+          <div class="menu_icono">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 23 23"
+            >
+              <path
+                class="inactivo"
+                d="M.8,23a.852.852,0,0,1-.8-.825v-3.6a.828.828,0,0,1,.8-.884H3.993a.8.8,0,0,1,.8.884v3.539a.866.866,0,0,1-.8.884Zm7.986-.884a.867.867,0,0,1-.8-.885V19.4a.867.867,0,0,1,.8-.885H22.2a.814.814,0,0,1,.745.944v1.768a.867.867,0,0,1-.8.885ZM.8,14.154a.853.853,0,0,1-.8-.826v-3.6a.829.829,0,0,1,.8-.885H3.993a.867.867,0,0,1,.8.885V13.27a.866.866,0,0,1-.8.884Zm7.986-.884a.867.867,0,0,1-.8-.885V10.556a.828.828,0,0,1,.8-.884H22.2a.882.882,0,0,1,.745.943v1.769a.867.867,0,0,1-.8.885ZM.8,5.308A.853.853,0,0,1,0,4.482V.884A.828.828,0,0,1,.8,0H3.993a.866.866,0,0,1,.8.884V4.423a.867.867,0,0,1-.8.885Zm8.039-.885a.866.866,0,0,1-.8-.884V1.71a.828.828,0,0,1,.8-.884H22.2a.906.906,0,0,1,.8.884V3.539a.866.866,0,0,1-.8.884Z"
+              />
+            </svg>
+            <p>Horario</p>
+          </div>
+        </a>
+      </div>
+      <div class="menu_rigth"></div>
+    </div>
+    <!-- Aquí acaba el tapbar -->
+    <div
+      class="animsition container"
+      data-animsition-in-class="fade-in"
+      data-animsition-in-duration="1000"
+      data-animsition-out-class="fade-out"
+      data-animsition-out-duration="800"
+    >
+      <!-- Aquí empieza el navbar -->
+      <div class="header">
+        <div class="navbar_config">
+          <div class="navbar_atras">
+            <div class="navbar_icono">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="21"
+                viewBox="0 0 12 21"
+              >
+                <path
+                  class="button back_svg"
+                  d="M3.621,10.5l7.939-7.939A1.5,1.5,0,1,0,9.439.439l-9,9a1.5,1.5,0,0,0,0,2.121l9,9a1.5,1.5,0,1,0,2.121-2.121Z"
+                />
+              </svg>
+              <p>Atrás</p>
+            </div>
+          </div>
+          <a href="./config.html">
+            <div class="navbar_icono">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+              >
+                <path
+                  class="button settings_svg"
+                  d="M12.5,2a.808.808,0,0,0-.808.808v.139a.8.8,0,0,1-.653.792c-.185.03-.368.065-.549.106a.794.794,0,0,1-.9-.481l-.054-.126a.808.808,0,0,0-1.492.618l.054.129a.793.793,0,0,1-.3.98q-.237.148-.464.309a.8.8,0,0,1-1.019-.1l-.1-.1A.808.808,0,0,0,5.076,6.218l.1.1a.8.8,0,0,1,.1,1.019q-.161.227-.309.464a.8.8,0,0,1-.981.3l-.128-.054a.808.808,0,1,0-.62,1.492l.126.052a.8.8,0,0,1,.483.9c-.041.181-.077.364-.107.549a.794.794,0,0,1-.79.653H2.808a.808.808,0,1,0,0,1.615h.139a.8.8,0,0,1,.792.653c.03.185.065.368.106.549a.794.794,0,0,1-.481.9l-.126.054a.808.808,0,0,0,.618,1.492l.129-.054a.8.8,0,0,1,.981.3c.1.158.2.314.309.465a.8.8,0,0,1-.1,1.019l-.1.1a.808.808,0,0,0,1.142,1.142l.1-.1a.794.794,0,0,1,1.018-.1q.228.162.465.311a.8.8,0,0,1,.3.981l-.054.128a.808.808,0,1,0,1.492.62l.052-.126a.8.8,0,0,1,.9-.483c.181.041.364.077.549.107a.791.791,0,0,1,.652.789v.139a.808.808,0,0,0,1.615,0v-.139a.8.8,0,0,1,.653-.792c.185-.03.368-.065.549-.106a.794.794,0,0,1,.9.481l.054.126a.808.808,0,0,0,1.492-.618l-.054-.129a.8.8,0,0,1,.3-.981c.158-.1.314-.2.465-.309a.8.8,0,0,1,1.019.1l.1.1a.808.808,0,0,0,1.142-1.142l-.1-.1a.794.794,0,0,1-.1-1.018q.162-.228.311-.465a.8.8,0,0,1,.981-.3l.128.054a.808.808,0,1,0,.62-1.492l-.126-.052a.8.8,0,0,1-.483-.9c.041-.181.077-.364.107-.549a.791.791,0,0,1,.789-.652h.139a.808.808,0,0,0,0-1.615h-.139a.8.8,0,0,1-.792-.653c-.03-.185-.065-.368-.106-.549a.794.794,0,0,1,.481-.9l.126-.054a.808.808,0,0,0-.618-1.492l-.129.054a.8.8,0,0,1-.981-.3c-.1-.158-.2-.314-.309-.465a.8.8,0,0,1,.1-1.019l.1-.1a.808.808,0,0,0-1.142-1.142l-.1.1a.8.8,0,0,1-1.019.1q-.228-.162-.465-.311a.8.8,0,0,1-.3-.981l.054-.128a.808.808,0,1,0-1.492-.62l-.054.126a.8.8,0,0,1-.9.483c-.181-.041-.364-.077-.549-.107a.793.793,0,0,1-.652-.79V2.808A.808.808,0,0,0,12.5,2Zm0,4.038a6.459,6.459,0,0,1,6.406,5.654H13.9a1.615,1.615,0,0,0-1.4-.808h0L9.993,6.543A6.438,6.438,0,0,1,12.5,6.038ZM8.6,7.357l2.5,4.335a1.6,1.6,0,0,0,0,1.612L8.6,17.641a6.445,6.445,0,0,1,0-10.284Zm5.3,5.95h5.009a6.46,6.46,0,0,1-8.913,5.149L12.5,14.115h0A1.615,1.615,0,0,0,13.9,13.308Z"
+                  transform="translate(-2 -2)"
+                />
+              </svg>
+            </div>
+          </a>
+        </div>
+        <!--   Aquí acaba el navbar-->
+        <!-- Aquí empieza sección -->
+      </div>
+      <!--   Aquí acaba el navbar-->
+      <!-- Aquí empieza sección -->
+      <div class="seccion_config">
+        <h1 class="config">Configuración</h1>
+        <div
+          class="datos_user animsition"
+          data-animsition-in-class="fade-in-left-sm"
+          data-animsition-in-duration="1000"
+          data-animsition-out-class="fade-out-left-sm"
+          data-animsition-out-duration="800"
+        >
+          <div class="content1">
+            <div
+              class="content_svg animsition"
+              data-animsition-in-class="fade-in-right-sm"
+              data-animsition-in-duration="1000"
+              data-animsition-out-class="fade-out-right-sm"
+              data-animsition-out-duration="800"
+            >
+              <!-- <div class="content_svg"> -->
+              <img
+                class="perfil"
+                src="./dist/img/perfil.jpg"
+                alt="foto de perfil"
+              />
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="content5">
+            <div class="datos_uno">
+              <div class="text2">
+                <p>Daniel Valderrama Mendoza</p>
+                <p><span>danielvalderramam@usantotomas.edu.co</span></p>
+              </div>
+            </div>
+            <div class="datos_dos">
+              <div class="text">
+                <p><span>Facultad</span></p>
+                <p>Diseño Gráfico</p>
+              </div>
+              <div class="text">
+                <p><span>Documento</span></p>
+                <p>1000697200</p>
+              </div>
+              <div class="text">
+                <p><span>Código</span></p>
+                <p>2221545</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ilustra_config"></div>
+        <div
+          class="menu_config animsition"
+          data-animsition-in-class="fade-in-up-sm"
+          data-animsition-in-duration="1000"
+          data-animsition-out-class="fade-out-up-sm"
+          data-animsition-out-duration="800"
+        >
+          <a
+            href="#modal_config_notification"
+            id="show-modal_config_notification"
+          >
+            <div class="item_config">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17.5"
+                height="21"
+                viewBox="0 0 17.5 21"
+              >
+                <path
+                  class="button notificaciones_svg"
+                  d="M60.112,17.476,58.61,15a7.265,7.265,0,0,1-1.06-3.776V9.065a6.062,6.062,0,0,0-4.375-5.788V1.727a1.75,1.75,0,0,0-3.5,0v1.55A6.062,6.062,0,0,0,45.3,9.065v2.164A7.27,7.27,0,0,1,44.24,15l-1.5,2.471a.426.426,0,0,0-.005.435.437.437,0,0,0,.38.219H59.737a.44.44,0,0,0,.381-.218A.428.428,0,0,0,60.112,17.476Z"
+                  transform="translate(-42.675)"
+                />
+                <g transform="translate(5.736 19.086)">
+                  <path
+                    class="button"
+                    d="M188.815,469.333a3.329,3.329,0,0,0,6.027,0Z"
+                    transform="translate(-188.815 -469.333)"
+                  />
+                </g>
+              </svg>
+              <p>Notificaciones</p>
+            </div>
+
+            <a
+              href="mailto:danielvalderramam@usantotomas.edu.co?subject=Feedback"
+            >
+              <div class="item_config">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="19.099"
+                  height="21"
+                  viewBox="0 0 19.099 21"
+                >
+                  <path
+                    class="button bug_svg"
+                    d="M21.905,8.89H19.745a7.144,7.144,0,0,0-2.173-2.34l1.11-1.11A1.19,1.19,0,1,0,17,3.757L15.245,5.511a7.24,7.24,0,0,0-1.7-.2,7.064,7.064,0,0,0-1.683.2L10.1,3.757A1.19,1.19,0,1,0,8.417,5.44l1.1,1.11A7.236,7.236,0,0,0,7.354,8.89H5.194a1.194,1.194,0,1,0,0,2.387h1.3a7.924,7.924,0,0,0-.107,1.194v1.194H5.194a1.194,1.194,0,1,0,0,2.387H6.387v1.194a7.923,7.923,0,0,0,.107,1.194h-1.3a1.194,1.194,0,0,0,0,2.387H7.354a7.149,7.149,0,0,0,12.391,0h2.161a1.194,1.194,0,0,0,0-2.387H20.6a7.924,7.924,0,0,0,.107-1.194V16.052h1.194a1.194,1.194,0,1,0,0-2.387H20.712V12.471a7.924,7.924,0,0,0-.107-1.194h1.3a1.194,1.194,0,0,0,0-2.387Zm-7.162,9.55H12.356a1.194,1.194,0,1,1,0-2.387h2.387a1.194,1.194,0,1,1,0,2.387Zm0-4.775H12.356a1.194,1.194,0,1,1,0-2.387h2.387a1.194,1.194,0,1,1,0,2.387Z"
+                    transform="translate(-4 -3.407)"
+                  />
+                </svg>
+                <p>¿Problemas?</p>
+              </div>
+            </a>
+          </a>
+          <a href="https://campusvirtual.usta.edu.co/">
+            <div class="item_config">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+              >
+                <g id="school" transform="translate(0 -36.648)">
+                  <g id="Layer_5_59_" transform="translate(0 36.648)">
+                    <g
+                      id="Group_25"
+                      data-name="Group 25"
+                      transform="translate(0 0)"
+                    >
+                      <path
+                        class="button"
+                        data-name="Path 15"
+                        d="M56.173,207.035a2.021,2.021,0,0,1-2.506,0l-5.673-4.585s-.512-.414-.512.523v4.578c0,2.412,3.33,5.012,7.438,5.012s7.438-2.6,7.438-5.012v-4.836c0-.752-.364-.385-.364-.385Z"
+                        transform="translate(-44.42 -191.563)"
+                      />
+                      <path
+                        class="button"
+                        data-name="Path 16"
+                        d="M20.649,43.888a.759.759,0,0,0,0-1.281l-9.3-5.695a1.508,1.508,0,0,0-1.705,0l-9.3,5.695a.759.759,0,0,0,0,1.281l9.3,6.984a1.508,1.508,0,0,0,1.705,0"
+                        transform="translate(0 -36.648)"
+                      />
+                      <path
+                        class="button"
+                        data-name="Path 17"
+                        d="M357.7,193.659v-7.714s.005-.365-.211-.245a6.3,6.3,0,0,0-.75.465.647.647,0,0,0-.134.489v7a.206.206,0,0,1-.126.171,1.333,1.333,0,1,0,1.344,0A.2.2,0,0,1,357.7,193.659Z"
+                        transform="translate(-337.601 -176.067)"
+                      />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <p>Entra a moodle</p>
+            </div>
+          </a>
+          <a href="http://oas.usta.edu.co:8080/sgacampus/">
+            <div class="item_config">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17.588"
+                height="21"
+                viewBox="0 0 17.588 21"
+              >
+                <g id="sac" transform="translate(-39.227 0)">
+                  <path
+                    class="button"
+                    data-name="Path 9"
+                    d="M97.351,142.638a.644.644,0,0,0,.644-.644v-8.5a.644.644,0,0,0-.644-.644H95.434a.644.644,0,0,0-.644.644v8.5a.644.644,0,0,0,.644.644Z"
+                    transform="translate(-53.146 -127.068)"
+                  />
+                  <path
+                    class="button"
+                    data-name="Path 10"
+                    d="M207.129,142.653a.644.644,0,0,0,.643-.644v-8.5a.643.643,0,0,0-.643-.644h-1.917a.644.644,0,0,0-.644.644v8.5a.644.644,0,0,0,.644.644Z"
+                    transform="translate(-158.149 -127.082)"
+                  />
+                  <path
+                    class="button"
+                    data-name="Path 11"
+                    d="M316.888,142.638a.644.644,0,0,0,.643-.644v-8.5a.644.644,0,0,0-.643-.644h-1.917a.644.644,0,0,0-.644.644v8.5a.644.644,0,0,0,.644.644Z"
+                    transform="translate(-263.135 -127.068)"
+                  />
+                  <path
+                    class="button"
+                    data-name="Path 12"
+                    d="M72.709,4.595H86.775A.318.318,0,0,0,86.931,4L79.941.052a.4.4,0,0,0-.4,0L72.554,4a.317.317,0,0,0,.155.594Z"
+                    transform="translate(-31.722 0)"
+                  />
+                  <path
+                    class="button"
+                    data-name="Path 13"
+                    d="M74.616,376.572a.877.877,0,0,0,.878.878H88.247a.878.878,0,0,0,0-1.755H75.494A.877.877,0,0,0,74.616,376.572Z"
+                    transform="translate(-33.85 -359.353)"
+                  />
+                  <path
+                    class="button"
+                    data-name="Path 14"
+                    d="M55.761,434.387H40.28a1.053,1.053,0,1,0,0,2.106H55.761a1.053,1.053,0,1,0,0-2.106Z"
+                    transform="translate(0 -415.493)"
+                  />
+                </g>
+              </svg>
+              <p>Entra a tu SAC</p>
+            </div>
+          </a>
+          <a href="#modal_config_logout" id="show-modal_config_logout">
+            <div class="item_logout">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+              >
+                <path
+                  class="inactivo"
+                  d="M12.6,11.379a.858.858,0,0,0-.84.875v3.5a.859.859,0,0,1-.84.875H8.4V3.5A1.76,1.76,0,0,0,7.257,1.84l-.249-.087h3.913a.859.859,0,0,1,.84.875V5.254a.841.841,0,1,0,1.68,0V2.629A2.577,2.577,0,0,0,10.922,0H1.89A.637.637,0,0,0,1.8.023C1.76.02,1.721,0,1.68,0A1.718,1.718,0,0,0,0,1.754V17.5a1.76,1.76,0,0,0,1.144,1.663L6.2,20.923A1.676,1.676,0,0,0,6.721,21a1.718,1.718,0,0,0,1.68-1.75v-.875h2.52a2.577,2.577,0,0,0,2.52-2.625v-3.5A.858.858,0,0,0,12.6,11.379Zm0,0"
+                  transform="translate(0 -0.004)"
+                />
+                <path
+                  class="inactivo logout_svg"
+                  d="M286.328,110.272l-3.361-3.361a.84.84,0,0,0-1.434.594v2.52h-3.361a.84.84,0,1,0,0,1.68h3.361v2.52a.84.84,0,0,0,1.434.594l3.361-3.361A.839.839,0,0,0,286.328,110.272Zm0,0"
+                  transform="translate(-265.574 -102.166)"
+                />
+              </svg>
+              -->
+              <p>Cerrar sesión</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aquí acaba la sección -->
+    <!-- Aquí acaba complementos -->
+    <aside id="modal_config_logout" class="modal_config_logout">
+      <div class="content-modal_config_logout">
+        <p>¿Desea cerrar sesión</p>
+        <div class="btn-modal_config_logout">
+          <a href="./ingreso.html" class="active-modal_config_logout"
+            >Cerrar sesión</a
+          >
+        </div>
+        <div class="btn-modal_config_logout">
+          <a href="#" class="close-modal_config_logout">Cancelar</a>
+        </div>
+      </div>
+    </aside>
+    <aside id="modal_config_notification" class="modal_config_notification">
+      <div class="content-modal_config_notification">
+        <div class="btn-modal_config_notification">
+          <a href="#" class="logout" class="close-modal_config_notification"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="21"
+              viewBox="0 0 12 21"
+            >
+              <path
+                class="inactivo back_svg"
+                d="M3.621,10.5l7.939-7.939A1.5,1.5,0,1,0,9.439.439l-9,9a1.5,1.5,0,0,0,0,2.121l9,9a1.5,1.5,0,1,0,2.121-2.121Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./dist/js/animsition.min.js"></script>
+    <script src="./dist/js/javascript.js" charset="utf-8"></script>
+  </body>
+</html>

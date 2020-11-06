@@ -28,7 +28,7 @@
 }
 
 .accion_ingreso .invitado {
-  background: var(--white);
+  background: var(--white-color);
   color: var(--gray-color);
   border: solid var(--gray-color) 1px;
 }
