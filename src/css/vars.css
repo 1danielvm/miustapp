@@ -1775,6 +1775,14 @@ svg.top_svg {
 
   .hs {
     grid-column: start/end;
+    height: 200px;
+  }
+
+  .container_carrusel_e {
+    display: grid;
+    gap: 16px;
+    max-width: 577px;
+    overflow-x: scroll;
   }
 
   li.uno {
