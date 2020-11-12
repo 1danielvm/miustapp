@@ -27,6 +27,7 @@
 .dia_calendario p {
   font-size: 24px;
   font-weight: 400;
+  margin: 0;
 }
 .dia_calendario strong {
   font-size: 12px;
