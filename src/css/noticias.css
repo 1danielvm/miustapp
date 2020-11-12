@@ -56,19 +56,19 @@
   z-index: 2;
   height: 123px;
   position: relative;
-  top: -54%;
-  border-radius: var(--space);
+  top: -32%;
+  border-radius: 8px;
 }
 
 .parrafo-card {
-  color: var(--white-color);
-  font-size: var(--normal);
-  padding: var(--space);
+  color: #ffffff;
+  font-size: 16px;
+  padding: 8px;
   font-weight: 600;
   line-height: 16px;
   z-index: 3;
   position: relative;
-  top: -101%;
+  top: -81%;
   margin: 0;
   padding: 20px;
   padding-bottom: 0px;
