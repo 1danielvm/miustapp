@@ -1,184 +1,265 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="./dist/css/estilos.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./dist/css/animsition.min.css"
+    />
+    <link rel="icon" sizes="192x192" href="./dist/img/logo_sitio.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <meta
+      name="description"
+      content="Aplicación hecha por estudiantes para estudiantes. ENJOY."
+    />
+    <meta
+      name="author"
+      content="Daniel Valderrama Mendoza, Juan David Rey Peña & Julian Esteban Espinosa Orozco"
+    />
+    <title>Noticias</title>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="./dist/css/estilos.css">
-  <link rel="stylesheet" type="text/css" href="./dist/css/animsition.min.css">
-  <link rel="icon" sizes="192x192" href="./dist/img/logo_sitio.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
-  <meta name="description" content="Aplicación hecha por estudiantes para estudiantes. ENJOY.">
-  <meta name="author" content="Daniel Valderrama Mendoza, Juan David Rey Peña & Julian Esteban Espinosa Orozco">
-  <title>Noticias</title>
-</head>
-
-<body>
-  <!-- Aquí empieza el tapbar -->
-  <div class="menu2">
-    <div class="left">
-      <div class="logo_menu"></div>
-      <h3>Mi Usta</h3>
-    </div>
-    <div class="tags">
-      <a href="./noticias_inv.html" class="activo">
-        <p>Noticias</p>
-      </a>
-      <a href="./directorio_inv.html">
-        <p>Directorio</p>
-      </a>
-      <a href="./mapa_inv.html">
-        <p>Mapa</p>
-      </a>
-      <a href="./notas_inv.html">
-        <p>Notas</p>
-      </a>
-      <a href="./horario_inv.html">
-        <p>Horario</p>
-      </a>
-    </div>
-  </div>
-  <div class="menu">
-    <div class="menu_left"></div>
-    <div class="menu_center">
-      <a href="./noticias_inv.html">
-        <div class="menu_icono activo">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 25.5 25.5">
-            <path class="activo"
-              d="M22.95,0H7.65A2.557,2.557,0,0,0,5.1,2.55V21.675a1.275,1.275,0,1,1-2.55,0V7.65A1.371,1.371,0,0,0,1.275,6.375,1.371,1.371,0,0,0,0,7.65v15.3A2.557,2.557,0,0,0,2.55,25.5h20.4a2.557,2.557,0,0,0,2.55-2.55V2.55A2.557,2.557,0,0,0,22.95,0ZM16.575,12.75H8.925A1.278,1.278,0,0,1,7.65,11.475,1.371,1.371,0,0,1,8.925,10.2h7.65a1.371,1.371,0,0,1,1.275,1.275A1.278,1.278,0,0,1,16.575,12.75Zm5.1-5.1H8.925A1.278,1.278,0,0,1,7.65,6.375,1.371,1.371,0,0,1,8.925,5.1h12.75A1.371,1.371,0,0,1,22.95,6.375,1.278,1.278,0,0,1,21.675,7.65Z" />
-          </svg>
+  <body>
+    <!-- Aquí empieza el tapbar -->
+    <div class="menu2">
+      <div class="left">
+        <div class="logo_menu"></div>
+        <h3>Mi Usta</h3>
+      </div>
+      <div class="tags">
+        <a href="./noticias_inv.html" class="activo">
           <p>Noticias</p>
-        </div>
-      </a>
-      <a href="./directorio_inv.html">
-        <div class="menu_icono">
-          <svg xmlns="http://www.w3.org/2000/svg" width="21.38" height="21.38" viewBox="0 0 25 25">
-            <g transform="translate(0 0)">
-              <path class="inactivo"
-                d="M24.282,17.648,18.811,15.3a1.2,1.2,0,0,0-1.355.313l-2.4,2.972A17.9,17.9,0,0,1,6.409,9.93l2.97-2.4a1.122,1.122,0,0,0,.313-1.356L7.347.7A1.193,1.193,0,0,0,5.992.023L.886,1.17A1.174,1.174,0,0,0,0,2.317,22.691,22.691,0,0,0,22.667,25h0a1.174,1.174,0,0,0,1.146-.886L24.96,19A1.166,1.166,0,0,0,24.282,17.648Z" />
-            </g>
-          </svg>
+        </a>
+        <a href="./directorio_inv.html">
           <p>Directorio</p>
-        </div>
-      </a>
-      <a href="./mapa_inv.html">
-        <div class="menu_icono">
-          <svg xmlns="http://www.w3.org/2000/svg" width="15.71" height="21.5" viewBox="0 0 19 26">
-            <g transform="translate(0 0)">
-              <path class="inactivo"
-                d="M9.5,26h0c-.1-.113-2.442-2.818-4.749-6.113C2.583,16.79,0,12.519,0,9.749A9.81,9.81,0,0,1,2.791,2.864a9.292,9.292,0,0,1,13.419,0A9.81,9.81,0,0,1,19,9.749c0,2.77-2.583,7.041-4.75,10.136-2.3,3.29-4.65,6-4.749,6.113Zm0-19.5a3.251,3.251,0,1,0,3.167,3.25A3.213,3.213,0,0,0,9.5,6.5Z"
-                transform="translate(0 0)" />
-            </g>
-          </svg>
+        </a>
+        <a href="./mapa_inv.html">
           <p>Mapa</p>
-        </div>
-      </a>
-      <a href="./notas_inv.html">
-        <div class="menu_icono inactivo">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23">
-            <g transform="translate(0 0)">
-              <path class="inactivo"
-                d="M20.549,23H2.448A2.473,2.473,0,0,1,0,20.509V2.444A2.449,2.449,0,0,1,2.448,0H20.6a2.406,2.406,0,0,1,1.721.718A2.317,2.317,0,0,1,23,2.444V20.557A2.449,2.449,0,0,1,20.549,23Zm-4.9-9.87a.837.837,0,0,0-.817.814v3.307a.837.837,0,0,0,.817.814h1.632a.836.836,0,0,0,.816-.814V13.943a.836.836,0,0,0-.816-.814ZM10.707,4.936a.837.837,0,0,0-.817.815v11.5a.837.837,0,0,0,.817.814h1.632a.837.837,0,0,0,.817-.814V5.751a.837.837,0,0,0-.817-.815ZM5.762,9.871a.837.837,0,0,0-.817.815v6.564a.837.837,0,0,0,.817.814H7.394a.836.836,0,0,0,.816-.814V10.686a.837.837,0,0,0-.816-.815Z"
-                transform="translate(0 0)" />
-            </g>
-          </svg>
+        </a>
+        <a href="./notas_inv.html">
           <p>Notas</p>
-
-        </div>
-      </a>
-      <a href="./horario_inv.html">
-        <div class="menu_icono inactivo">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23">
-            <path class="inactivo"
-              d="M.8,23a.852.852,0,0,1-.8-.825v-3.6a.828.828,0,0,1,.8-.884H3.993a.8.8,0,0,1,.8.884v3.539a.866.866,0,0,1-.8.884Zm7.986-.884a.867.867,0,0,1-.8-.885V19.4a.867.867,0,0,1,.8-.885H22.2a.814.814,0,0,1,.745.944v1.768a.867.867,0,0,1-.8.885ZM.8,14.154a.853.853,0,0,1-.8-.826v-3.6a.829.829,0,0,1,.8-.885H3.993a.867.867,0,0,1,.8.885V13.27a.866.866,0,0,1-.8.884Zm7.986-.884a.867.867,0,0,1-.8-.885V10.556a.828.828,0,0,1,.8-.884H22.2a.882.882,0,0,1,.745.943v1.769a.867.867,0,0,1-.8.885ZM.8,5.308A.853.853,0,0,1,0,4.482V.884A.828.828,0,0,1,.8,0H3.993a.866.866,0,0,1,.8.884V4.423a.867.867,0,0,1-.8.885Zm8.039-.885a.866.866,0,0,1-.8-.884V1.71a.828.828,0,0,1,.8-.884H22.2a.906.906,0,0,1,.8.884V3.539a.866.866,0,0,1-.8.884Z" />
-          </svg>
+        </a>
+        <a href="./horario_inv.html">
           <p>Horario</p>
-
-        </div>
-      </a>
+        </a>
+      </div>
     </div>
-    <div class="menu_rigth"></div>
-  </div>
-  <!-- Aquí acaba el tapbar -->
-  <div class="animsition container" data-animsition-in-class="fade-in" data-animsition-in-duration="800"
-    data-animsition-out-class="fade-out-down" data-animsition-out-duration="600">
-    <!-- Aquí empieza el navbar -->
-
-    <div class="header">
-      <div class="navbar_config">
-        <div class="navbar_atras" id="back">
-          <div class="navbar_icono">
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="21" viewBox="0 0 12 21">
-              <path class="button back_svg"
-                d="M3.621,10.5l7.939-7.939A1.5,1.5,0,1,0,9.439.439l-9,9a1.5,1.5,0,0,0,0,2.121l9,9a1.5,1.5,0,1,0,2.121-2.121Z" />
+    <div class="menu">
+      <div class="menu_left"></div>
+      <div class="menu_center">
+        <a href="./noticias_inv.html">
+          <div class="menu_icono activo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 25.5 25.5"
+            >
+              <path
+                class="activo"
+                d="M22.95,0H7.65A2.557,2.557,0,0,0,5.1,2.55V21.675a1.275,1.275,0,1,1-2.55,0V7.65A1.371,1.371,0,0,0,1.275,6.375,1.371,1.371,0,0,0,0,7.65v15.3A2.557,2.557,0,0,0,2.55,25.5h20.4a2.557,2.557,0,0,0,2.55-2.55V2.55A2.557,2.557,0,0,0,22.95,0ZM16.575,12.75H8.925A1.278,1.278,0,0,1,7.65,11.475,1.371,1.371,0,0,1,8.925,10.2h7.65a1.371,1.371,0,0,1,1.275,1.275A1.278,1.278,0,0,1,16.575,12.75Zm5.1-5.1H8.925A1.278,1.278,0,0,1,7.65,6.375,1.371,1.371,0,0,1,8.925,5.1h12.75A1.371,1.371,0,0,1,22.95,6.375,1.278,1.278,0,0,1,21.675,7.65Z"
+              />
             </svg>
+            <p>Noticias</p>
           </div>
-          <p>Atrás</p>
-        </div>
-        <a href="./registro.html">
-          <div class="navbar_icono">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18.457" height="21" viewBox="0 0 18.457 21">
-              <g transform="translate(3.73)">
-                <g transform="translate(0)">
-                  <path class="button user_svg" d="M126.5,0A5.5,5.5,0,1,0,132,5.5,5.505,5.505,0,0,0,126.5,0Z"
-                    transform="translate(-121)" />
-                </g>
-              </g>
-              <g transform="translate(0 12.365)">
-                <g transform="translate(0)">
-                  <path class="button"
-                    d="M47.118,302.37A7.921,7.921,0,0,0,41.459,300H39a8.04,8.04,0,0,0-8,8.024.613.613,0,0,0,.615.611H48.842a.613.613,0,0,0,.615-.611A7.985,7.985,0,0,0,47.118,302.37Z"
-                    transform="translate(-31 -300)" />
-                </g>
+        </a>
+        <a href="./directorio_inv.html">
+          <div class="menu_icono">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21.38"
+              height="21.38"
+              viewBox="0 0 25 25"
+            >
+              <g transform="translate(0 0)">
+                <path
+                  class="inactivo"
+                  d="M24.282,17.648,18.811,15.3a1.2,1.2,0,0,0-1.355.313l-2.4,2.972A17.9,17.9,0,0,1,6.409,9.93l2.97-2.4a1.122,1.122,0,0,0,.313-1.356L7.347.7A1.193,1.193,0,0,0,5.992.023L.886,1.17A1.174,1.174,0,0,0,0,2.317,22.691,22.691,0,0,0,22.667,25h0a1.174,1.174,0,0,0,1.146-.886L24.96,19A1.166,1.166,0,0,0,24.282,17.648Z"
+                />
               </g>
             </svg>
+            <p>Directorio</p>
+          </div>
+        </a>
+        <a href="./eventos_inv.html">
+          <div class="menu_icono">
+            <svg
+              width="19"
+              height="21"
+              viewBox="0 0 19 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="inactivo"
+                d="M18.2268 7.08223H1.06387C0.795617 7.08223 0.578125 6.87482 0.578125 6.619V5.22929C0.578125 4.20593 1.44801 3.37635 2.5211 3.37635H4.46407V1.369C4.46407 1.11318 4.68156 0.905762 4.94981 0.905762H6.56896C6.83721 0.905762 7.0547 1.11318 7.0547 1.369V3.37635H12.236V1.369C12.236 1.11318 12.4535 0.905762 12.7217 0.905762H14.3409C14.6091 0.905762 14.8266 1.11318 14.8266 1.369V3.37635H16.7696C17.8427 3.37635 18.7125 4.20593 18.7125 5.22929V6.619C18.7125 6.87482 18.495 7.08223 18.2268 7.08223ZM1.06387 8.31753H18.2268C18.495 8.31753 18.7125 8.52494 18.7125 8.78076V18.8175C18.7125 19.8409 17.8427 20.6705 16.7696 20.6705H2.5211C1.44801 20.6705 0.578125 19.8409 0.578125 18.8175V8.78076C0.578125 8.52494 0.795617 8.31753 1.06387 8.31753ZM14.5552 12.0214L13.415 10.9251C13.2261 10.7435 12.9185 10.7423 12.7281 10.9225L8.43583 14.9829L6.57463 13.1936C6.38571 13.012 6.07812 13.0108 5.88766 13.191L4.73819 14.2784C4.54774 14.4586 4.54649 14.7519 4.73544 14.9335L8.07901 18.1479C8.26793 18.3295 8.57548 18.3307 8.76593 18.1505L14.5525 12.6765C14.7429 12.4963 14.7442 12.203 14.5552 12.0214Z"
+              />
+            </svg>
+            <p>Eventos</p>
+          </div>
+        </a>
+        <a href="./notas_inv.html">
+          <div class="menu_icono inactivo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 23 23"
+            >
+              <g transform="translate(0 0)">
+                <path
+                  class="inactivo"
+                  d="M20.549,23H2.448A2.473,2.473,0,0,1,0,20.509V2.444A2.449,2.449,0,0,1,2.448,0H20.6a2.406,2.406,0,0,1,1.721.718A2.317,2.317,0,0,1,23,2.444V20.557A2.449,2.449,0,0,1,20.549,23Zm-4.9-9.87a.837.837,0,0,0-.817.814v3.307a.837.837,0,0,0,.817.814h1.632a.836.836,0,0,0,.816-.814V13.943a.836.836,0,0,0-.816-.814ZM10.707,4.936a.837.837,0,0,0-.817.815v11.5a.837.837,0,0,0,.817.814h1.632a.837.837,0,0,0,.817-.814V5.751a.837.837,0,0,0-.817-.815ZM5.762,9.871a.837.837,0,0,0-.817.815v6.564a.837.837,0,0,0,.817.814H7.394a.836.836,0,0,0,.816-.814V10.686a.837.837,0,0,0-.816-.815Z"
+                  transform="translate(0 0)"
+                />
+              </g>
+            </svg>
+            <p>Notas</p>
+          </div>
+        </a>
+        <a href="./horario_inv.html">
+          <div class="menu_icono inactivo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 23 23"
+            >
+              <path
+                class="inactivo"
+                d="M.8,23a.852.852,0,0,1-.8-.825v-3.6a.828.828,0,0,1,.8-.884H3.993a.8.8,0,0,1,.8.884v3.539a.866.866,0,0,1-.8.884Zm7.986-.884a.867.867,0,0,1-.8-.885V19.4a.867.867,0,0,1,.8-.885H22.2a.814.814,0,0,1,.745.944v1.768a.867.867,0,0,1-.8.885ZM.8,14.154a.853.853,0,0,1-.8-.826v-3.6a.829.829,0,0,1,.8-.885H3.993a.867.867,0,0,1,.8.885V13.27a.866.866,0,0,1-.8.884Zm7.986-.884a.867.867,0,0,1-.8-.885V10.556a.828.828,0,0,1,.8-.884H22.2a.882.882,0,0,1,.745.943v1.769a.867.867,0,0,1-.8.885ZM.8,5.308A.853.853,0,0,1,0,4.482V.884A.828.828,0,0,1,.8,0H3.993a.866.866,0,0,1,.8.884V4.423a.867.867,0,0,1-.8.885Zm8.039-.885a.866.866,0,0,1-.8-.884V1.71a.828.828,0,0,1,.8-.884H22.2a.906.906,0,0,1,.8.884V3.539a.866.866,0,0,1-.8.884Z"
+              />
+            </svg>
+            <p>Horario</p>
           </div>
         </a>
       </div>
-      <!--   Aquí acaba el navbar-->
-      <!-- Aquí empieza sección -->
+      <div class="menu_rigth"></div>
     </div>
-    <div class="seccion_estudiantes">
-      <h1 class="noticia">Noticias</h1>
-      <div class="tend_noticia_tipe1">
-        <div class="content_tend_tipe1">
-          <div class="content_img_tend_tipe1 animsition" data-animsition-in-class="fade-in-right-sm"
-            data-animsition-in-duration="1000" data-animsition-out-class="fade-out-right-sm"
-            data-animsition-out-duration="800">
-            <img src="./dist/img/noticia6_img1.jpg" alt="">
+    <!-- Aquí acaba el tapbar -->
+    <div
+      class="animsition container"
+      data-animsition-in-class="fade-in"
+      data-animsition-in-duration="800"
+      data-animsition-out-class="fade-out-down"
+      data-animsition-out-duration="600"
+    >
+      <!-- Aquí empieza el navbar -->
+
+      <div class="header">
+        <div class="navbar_config">
+          <div class="navbar_atras" id="back">
+            <div class="navbar_icono">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="21"
+                viewBox="0 0 12 21"
+              >
+                <path
+                  class="button back_svg"
+                  d="M3.621,10.5l7.939-7.939A1.5,1.5,0,1,0,9.439.439l-9,9a1.5,1.5,0,0,0,0,2.121l9,9a1.5,1.5,0,1,0,2.121-2.121Z"
+                />
+              </svg>
+            </div>
+            <p>Atrás</p>
           </div>
-          <div class="content_text_tend animsition" data-animsition-in-class="fade-in-up-sm"
-            data-animsition-in-duration="1000" data-animsition-out-class="fade-out-up-sm"
-            data-animsition-out-duration="800">
-            <h3>Feria Virtual del Empresarismo y el Emprendimiento Innovador USTA</h3>
-            <p><span>Hace 3 horas</span></p>
-            <p>¡El emprendimiento con innovación es la herramienta fundamental de la productividad en Colombia!</p>
-            <img class="descripcion" src="./dist/img/noticia6_img2.jpg" alt="">
+          <a href="./registro.html">
+            <div class="navbar_icono">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18.457"
+                height="21"
+                viewBox="0 0 18.457 21"
+              >
+                <g transform="translate(3.73)">
+                  <g transform="translate(0)">
+                    <path
+                      class="button user_svg"
+                      d="M126.5,0A5.5,5.5,0,1,0,132,5.5,5.505,5.505,0,0,0,126.5,0Z"
+                      transform="translate(-121)"
+                    />
+                  </g>
+                </g>
+                <g transform="translate(0 12.365)">
+                  <g transform="translate(0)">
+                    <path
+                      class="button"
+                      d="M47.118,302.37A7.921,7.921,0,0,0,41.459,300H39a8.04,8.04,0,0,0-8,8.024.613.613,0,0,0,.615.611H48.842a.613.613,0,0,0,.615-.611A7.985,7.985,0,0,0,47.118,302.37Z"
+                      transform="translate(-31 -300)"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <!--   Aquí acaba el navbar-->
+        <!-- Aquí empieza sección -->
+      </div>
+      <div class="seccion_estudiantes">
+        <h1 class="noticia">Noticias</h1>
+        <div class="tend_noticia_tipe1">
+          <div class="content_tend_tipe1">
+            <div
+              class="content_img_tend_tipe1 animsition"
+              data-animsition-in-class="fade-in-right-sm"
+              data-animsition-in-duration="1000"
+              data-animsition-out-class="fade-out-right-sm"
+              data-animsition-out-duration="800"
+            >
+              <img src="./dist/img/noticia6_img1.jpg" alt="" />
+            </div>
+            <div
+              class="content_text_tend animsition"
+              data-animsition-in-class="fade-in-up-sm"
+              data-animsition-in-duration="1000"
+              data-animsition-out-class="fade-out-up-sm"
+              data-animsition-out-duration="800"
+            >
+              <h3>
+                Feria Virtual del Empresarismo y el Emprendimiento Innovador
+                USTA
+              </h3>
+              <p><span>Hace 3 horas</span></p>
+              <p>
+                ¡El emprendimiento con innovación es la herramienta fundamental
+                de la productividad en Colombia!
+              </p>
+              <img
+                class="descripcion"
+                src="./dist/img/noticia6_img2.jpg"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Aquí acaba la sección -->
-  <footer>
-    <p>© Copyriht 2020 Universidad Santo Tomás - Mi Usta-app</p>
-    <ul>
-      <a href="mailto:danielvalderramam@usantotomas.edu.co?subject=Feedback">
-        <li>¿Problemas?</li>
-      </a>
-      <a href="./registro.html">
-        <li>Ingresa ahora!</li>
-      </a>
-    </ul>
-  </footer>
-  <!-- Aquí acaba complementos -->
+    <!-- Aquí acaba la sección -->
+    <footer>
+      <p>© Copyriht 2020 Universidad Santo Tomás - Mi Usta-app</p>
+      <ul>
+        <a href="mailto:danielvalderramam@usantotomas.edu.co?subject=Feedback">
+          <li>¿Problemas?</li>
+        </a>
+        <a href="./registro.html">
+          <li>Ingresa ahora!</li>
+        </a>
+      </ul>
+    </footer>
+    <!-- Aquí acaba complementos -->
 
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="./dist/js/animsition.min.js"></script>
-  <script src="./dist/js/javascript.js" charset="utf-8"></script>
-</body>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./dist/js/animsition.min.js"></script>
+    <script src="./dist/js/javascript.js" charset="utf-8"></script>
+  </body>
 </html>
