@@ -1,0 +1,97 @@
+/* ---------------------- EVENTOS--------------- */
+
+.dia_calendario {
+  margin: 29px 0px;
+  border: solid 1px #aeaeae;
+  color: var(--gray2-dark-color);
+  padding: 12px;
+  text-align: center;
+  border-radius: 16px;
+  display: grid;
+  gap: 8px;
+  font-size: 19px;
+  margin-right: 12px;
+  min-width: 56px;
+  max-width: 56px;
+}
+
+.dia_activo {
+  border: none;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+.dia_activo p {
+  color: var(--white-color);
+}
+
+.dia_calendario p {
+  font-size: 24px;
+  font-weight: 400;
+}
+.dia_calendario strong {
+  font-size: 12px;
+  font-weight: 700;
+}
+.item_eventos {
+  display: flex;
+  overflow-x: scroll;
+}
+.subtitulo_eventos {
+  font-size: 28px;
+  color: #47494d;
+}
+.img_tendencia {
+  height: 177px;
+  border-radius: 8px;
+}
+.tendencias_e {
+  margin-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: contents;
+  height: 240px;
+}
+.card_tendencia_e {
+  height: 177px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 18px;
+}
+.img_tendencia_e img {
+  object-fit: cover;
+  object-position: top;
+  z-index: 1;
+  border-radius: 8px;
+  width: 100%;
+  height: 177px;
+}
+
+.background-card_e {
+  z-index: 2;
+  height: 123px;
+  position: relative;
+  top: -69%;
+  background: transparent linear-gradient(180deg, #ffffff 0%, #000000 100%) 0%
+    0% no-repeat padding-box;
+  mix-blend-mode: multiply;
+  z-index: 2;
+  border-radius: var(--space);
+}
+.parrafo-card_e {
+  color: #ffffff;
+  font-size: 16px;
+  padding: 8px;
+  font-weight: 600;
+  line-height: 16px;
+  z-index: 3;
+  position: relative;
+  top: -117%;
+  margin: 0;
+  padding: 0px 11px;
+  padding-bottom: 0px;
+}
+
+.container_carrusel_e {
+  display: grid;
+  gap: 16px;
+}
