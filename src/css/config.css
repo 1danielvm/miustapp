@@ -537,3 +537,8 @@ path.user {
 .usermenu_footer-image img {
   width: 100%;
 }
+
+.codigoQR {
+  margin: 16px auto;
+  width: fit-content;
+}
